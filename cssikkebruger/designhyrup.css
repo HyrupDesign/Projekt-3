@@ -1,0 +1,50 @@
+body {
+  background-color: #fdfdfa;
+}
+.logo {
+  width: 231px; /* størrelse på logoet */
+}
+.menu {
+  display: flex;
+  justify-content: space-between; /* Skubber indholdet til hver sin ende */
+  align-items: center;
+  height: 18px;
+  padding-right: 44px;
+  padding-left: 20px;
+  padding-top: 52px;
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.hellogo {
+  scale: 0.5;
+}
+a {
+  color: #88a998; /* farve på de linkede menu knapper */
+}
+
+.nav-links {
+  display: flex;
+  gap: 44px; /* ifølge figma er der 44px mellem hver knap*/
+  list-style: none; /* at punktopstilling ikke har punkter*/
+}
+
+.fremvisning {
+  padding-top: 76px;
+  width: 100vw;
+}
+
+h1 {
+  font-family: poppins;
+  font-size: 48px;
+  font-weight: bold;
+  color: #b18b44;
+}
+
+h2 {
+  font-family: poppins;
+  font-size: 36px;
+  font-weight: 600;
+  color: #b18b44;
+}

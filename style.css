@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background1);
+}
+
+.topbar {
+  background-color: var(--background1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  padding-right: 20px;
+}
+
+.fa-bars {
+  scale: 1.5;
+}
+
+.logo {
+  width: 40px;
+}
+.forside {
+  background-image: url(Billeder/hulum.svg);
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+}
+
+.hellogo {
+  width: 250px;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.tekstForside {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em var(--accent),
+    0 0 0.2em var(--secondary);
+}
+
+.knap1 {
+  background-color: var(--secondary);
+  color: var(--background1);
+  font-family: poppins;
+  font-weight: bold;
+  padding: 16px;
+  border: 0;
+}
+
+:root {
+  --background1: #fdfdfa;
+  --background2: #ebebe3;
+  --primary: #88a998;
+  --secondary: #114761;
+  --accent: #b18b44;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|family=Poppins:600|Hind%20Vadodara:400");
+
+body {
+  font-family: "Hind Vadodara";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+html {
+  font-size: 50%;
+} /* 16px */
+
+h1 {
+  font-size: 3.053rem; /* 48.8px */
+  font-weight: 700;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 2.442rem; /* 39.04px */
+  color: var(--accent);
+}
+
+h3 {
+  font-size: 1.954rem; /* 31.2px */
+}
+
+h4 {
+  font-size: 1.563rem; /* 24.96px */
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+small {
+  font-size: 0.8rem; /* 12.8px */
+}
