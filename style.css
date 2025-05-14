@@ -4,50 +4,49 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--background1);
+  background-color: var(--background1); /* baggrundsfarve på hele siden */
 }
 
 .topbar {
-  background-color: var(--background1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  padding-right: 20px;
+  background-color: var(--background1); /* baggrundsfarve på topbaren*/
+  display: flex; /* indikere at der bruges flex-koder*/
+  justify-content: space-between; /* indikere at de to ikoner skal deles op */
+  align-items: center; /* indikere at ikonerne skal være på samme linje */
+  padding: 8px; /* giver luft foroven og for neden i topbaren */
+  padding-left: 20px; /* giver luft ude til venstre i topbaren, det alternativelogo er lidt større i det transparent*/
+  padding-right: 21px; /* derfor er ikonet til venstre 1px større for skabe alignment*/
 }
 
 .fa-bars {
-  scale: 1.5;
+  /* burgermenuen */
+  scale: 2; /* størrelsen på burgermenuen */
 }
 
 .logo {
-  width: 40px;
+  /* det alternative logo */
+  width: 40px; /* størrelsen på det alternativelogo */
 }
 .forside {
-  background-image: url(Billeder/hulum.svg);
-  background-color: blue;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: left;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8px;
+  background-image: url(Billeder/hulum.svg); /* hulum er billedet under tekst, logo og knap*/
+  background-color: blue; /* en kasse som hulum ligger oven på for at hulum kan have samme størrelse */
+  background-repeat: no-repeat; /* gør at billedet ikke gentager sig flere gange */
+  background-size: cover; /* gør at hulum bliver samme størrelse som background-color/kassen*/
+  background-position: 6%; /* fuldt billede 100% og dette fortæller hvilken del af de 100% der skal vises */
+  height: 500px; /* skalere hvor stort billedet skal være */
+  display: flex; /* indikere at flex metoden bliver brugt */
+  align-items: left; /* indikere at elementerne skal justeres til venstre */
+  flex-direction: column; /* indikere at elementerne skal ''listes''*/
+  justify-content: center; /* indikere at det skal centeres på background-image */
+  padding: 20px; /* indikere hvor meget luft der er fra kant til elementer (logo,tekst og knap) */
 }
 
 .hellogo {
   width: 250px;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 .tekstForside {
   padding-top: 30px;
   padding-bottom: 30px;
-
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em var(--accent),
-    0 0 0.2em var(--secondary);
 }
 
 .knap1 {
@@ -59,6 +58,44 @@ body {
   border: 0;
 }
 
+.grid-container ul {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #fdfdfa;
+  padding: 30px;
+  font-family: poppins;
+  font-size: 3.053rem;
+  font-weight: 700;
+  list-style-type: none;
+  color: #88a998;
+  text-align: center;
+  gap: 10px;
+}
+.openkasse > div {
+  /* hvorfor gider den her ikke at ændre sig i str.*/
+  width: 30px;
+}
+a {
+  color: #88a998;
+}
+
+.footer {
+  background-color: #114761;
+}
+
+.ikoner {
+  width: 26px;
+  height: auto;
+}
+/* herfra laver jeg nye sider*/
+.ommig {
+  font-family: poppins; /* hvordan linker man til hind vadodara som står i body'en? */
+  background-color: #ebebe3;
+  width: 221px;
+  padding: 20px;
+}
+
+/* og her slutter det*/
 :root {
   --background1: #fdfdfa;
   --background2: #ebebe3;
@@ -108,6 +145,8 @@ h4 {
 
 h5 {
   font-size: 1.25rem; /* 20px */
+  font-family: poppins;
+  font-weight: bold;
 }
 
 small {
