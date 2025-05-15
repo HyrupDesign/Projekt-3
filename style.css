@@ -17,11 +17,42 @@ body {
   padding-right: 21px; /* derfor er ikonet til venstre 1px større for skabe alignment*/
 }
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 .fa-bars {
   /* burgermenuen */
   scale: 2; /* størrelsen på burgermenuen */
 }
 
+.fa-bars hover {
+  cursor: pointer;
+}
 .logo {
   /* det alternative logo */
   width: 40px; /* størrelsen på det alternativelogo */
@@ -128,6 +159,7 @@ a {
 
   width: 340px;
   padding: 20px;
+  padding-bottom: 30px;
   justify-self: center;
 }
 .hvem {
@@ -136,6 +168,7 @@ a {
 }
 .kaldemig {
   justify-self: center;
+  text-align: center;
 }
 .portrat {
   justify-self: center;

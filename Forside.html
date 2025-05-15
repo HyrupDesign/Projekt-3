@@ -9,8 +9,9 @@
       src="https://kit.fontawesome.com/5f197fc237.js"
       crossorigin="anonymous"
     ></script>
+    <script src="dropdown.js"></script>
     <!-- burger menu fra fontawsome-->
-    <title>Document</title>
+    <title>forside</title>
   </head>
   <body>
     <header>
@@ -21,11 +22,14 @@
           <!-- billedet loget-->
         </div>
         <div class="dropdown">
-          <div class="burgermenuIkon"><i class="fa-solid fa-bars"></i></div>
+          <div class="burgermenuIkon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Hjem</a>
+            <a href="#">Om mig</a>
+            <a href="#">Projekter</a>
+            <a href="#">Kontakt</a>
           </div>
         </div>
       </div>
