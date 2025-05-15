@@ -57,42 +57,89 @@ body {
   padding: 16px;
   border: 0;
 }
-
-.grid-container ul {
-  display: grid;
-  grid-template-columns: auto;
+ul {
   background-color: #fdfdfa;
-  padding: 30px;
+  padding-top: 80px;
   font-family: poppins;
   font-size: 3.053rem;
   font-weight: 700;
   list-style-type: none;
   color: #88a998;
   text-align: center;
-  gap: 10px;
+  gap: 20px;
+  display: inherit;
 }
-.openkasse > div {
-  /* hvorfor gider den her ikke at ændre sig i str.*/
-  width: 30px;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "links"
+    "box";
+}
+.loesKategori {
+  grid-area: links;
+}
+.openbox {
+  grid-area: box;
+  padding: 16px;
 }
 a {
   color: #88a998;
 }
 
-.footer {
+.footer-grid {
   background-color: #114761;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 8px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "facebook insta"
+    "copyright copyright";
+  justify-items: center;
+  align-items: center;
+}
+.facebook {
+  grid-area: facebook;
+  width: 40px;
+  padding-top: 70px;
+  justify-self: right;
+}
+.insta {
+  grid-area: insta;
+  width: 40px;
+  padding-top: 70px;
+  justify-self: left;
+}
+
+.copyright {
+  grid-area: copyright;
+  color: #fdfdfa;
 }
 
 .ikoner {
   width: 26px;
   height: auto;
 }
+
 /* herfra laver jeg nye sider*/
 .ommig {
   font-family: poppins; /* hvordan linker man til hind vadodara som står i body'en? */
-  background-color: #ebebe3;
-  width: 221px;
+
+  width: 340px;
   padding: 20px;
+  justify-self: center;
+}
+.hvem {
+  padding: 30px;
+  justify-self: center;
+}
+.kaldemig {
+  justify-self: center;
+}
+.portrat {
+  justify-self: center;
+  padding-top: 30px;
 }
 
 /* og her slutter det*/
@@ -141,6 +188,7 @@ h3 {
 
 h4 {
   font-size: 1.563rem; /* 24.96px */
+  font-weight: 100;
 }
 
 h5 {

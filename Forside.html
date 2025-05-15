@@ -15,14 +15,19 @@
   <body>
     <header>
       <div class="topbar">
-        <!-- hoved menuen-->
         <div class="logo">
           <!--logoet oppe i venstre hjørne-->
           <img src="Billeder/alternativlogo.svg" alt="logo" />
           <!-- billedet loget-->
         </div>
-        <div class="burgermenuIkon"><i class="fa-solid fa-bars"></i></div>
-        <!-- selve ikonet fra fontawsome -->
+        <div class="dropdown">
+          <div class="burgermenuIkon"><i class="fa-solid fa-bars"></i></div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -32,7 +37,12 @@
           <img src="Billeder/hellogo.svg" alt="hellogo" class="hellogo" />
         </div>
         <div class="tekstForside">
-          <div class="mitnavn"><h1>MIKKEL HYRUP JOHANSEN</h1></div>
+          <div class="mitnavn">
+            <h1>
+              MIKKEL HYRUP <br />
+              JOHANSEN
+            </h1>
+          </div>
           <div class="Uddannelse"><h2>Multimediedesigner</h2></div>
         </div>
         <div><button class="knap1">SE PROJEKTER</button></div>
@@ -45,16 +55,25 @@
             <li><a href="fotografi">Fotografi</a></li>
             <li><a href="webdesign">Webdesign</a></li>
             <li><a href="paperart">Paperart</a></li>
-            <div><img src="Billeder/openbox.svg" alt="openkasse"></div>
+          </ul>
+          <div class="openbox">
+            <img src="Billeder/openbox.svg" alt="openbox" />
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="footer">
-        <div class="ikoner">
-        <div><img src="Billeder/faceikon.svg" alt="faceikon"></div>
-        <div> <img src="Billeder/instaikon.svg" alt="instaicon"></div></div>
-        <div class="copyright"><h5>copyright © 2025 MIKKEL HYRUP JOHANSEN</h5></div></div>
+      <div class="footer-grid">
+        <div class="facebook">
+          <img src="Billeder/faceikon.svg" alt="faceikon" />
+        </div>
+        <div class="insta">
+          <img src="Billeder/instaikon.svg" alt="instaicon" />
+        </div>
+        <div class="copyright">
+          <h5>copyright © 2025 MIKKEL HYRUP JOHANSEN</h5>
+        </div>
+      </div>
     </footer>
 
     <!--  <div class="container">
