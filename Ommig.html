@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="designhyrup.css" />  computer css -->
     <link rel="stylesheet" href="style.css" />
-    <script
+   <script
       src="https://kit.fontawesome.com/5f197fc237.js"
       crossorigin="anonymous"
     ></script>
+    <script src="dropdown.js"></script>
     <!-- burger menu fra fontawsome-->
     <title>ommig</title>
   </head>
   <body>
     <header>
-      <div class="topbar">
-        <!-- hoved menuen-->
+            <div class="topbar">
         <div class="logo">
           <!--logoet oppe i venstre hjørne-->
           <img src="Billeder/alternativlogo.svg" alt="logo" />
           <!-- billedet loget-->
         </div>
-        <div class="burgermenuIkon"><i class="fa-solid fa-bars"></i></div>
-        <!-- selve ikonet fra fontawsome -->
+        <div class="dropdown">
+          <div class="burgermenuIkon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="dropdown-content" class="dropdown-content">
+            <a href="Forside.html"><h3>Hjem</h3></a>
+            <a href="Ommig.html" class="valgt"><h3>Om mig </h3></a>
+            <a href="Projekter.html"><h3>Projekter</h3></a>
+            <a href="Kontakt.html"><h3>Kontakt</h3></a>
+          </div>
+        </div>
       </div>
     </header>
     <main>

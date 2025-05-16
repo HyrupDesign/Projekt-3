@@ -16,7 +16,9 @@ body {
   padding-left: 20px; /* giver luft ude til venstre i topbaren, det alternativelogo er lidt større i det transparent*/
   padding-right: 21px; /* derfor er ikonet til venstre 1px større for skabe alignment*/
 }
-
+.valgt {
+  background-color: var(--background2);
+}
 /* dropdown menu fra w3school.com: 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*/
 /* The container <div> - needed to position the dropdown content */
@@ -186,7 +188,10 @@ a {
   height: auto;
 }
 
-/* herfra laver jeg nye sider*/
+/*               */
+/*  Om mig start */
+/*               */
+
 .ommig {
   width: 340px;
   padding: 20px;
@@ -206,7 +211,14 @@ a {
   padding-top: 30px;
 }
 
-/* og her slutter det*/
+/*              */
+/*  om mig slut */
+/*              */
+
+/*                   */
+/*  Projekter start  */
+/*                   */
+
 :root {
   --background1: #fdfdfa;
   --background2: #ebebe3;

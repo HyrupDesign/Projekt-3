@@ -9,37 +9,70 @@
       src="https://kit.fontawesome.com/5f197fc237.js"
       crossorigin="anonymous"
     ></script>
+    <script src="dropdown.js"></script>
     <!-- burger menu fra fontawsome-->
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="topbar">
-        <!-- hoved menuen-->
         <div class="logo">
           <!--logoet oppe i venstre hjørne-->
           <img src="Billeder/alternativlogo.svg" alt="logo" />
           <!-- billedet loget-->
         </div>
-        <div class="burgermenuIkon" ><i class="fa-solid fa-bars"></i></div>
-        <!-- selve ikonet fra fontawsome -->
+        <div class="dropdown">
+          <div class="burgermenuIkon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="dropdown-content" class="dropdown-content">
+            <a href="Forside.html"><h3>Hjem</h3></a>
+            <a href="Ommig.html"><h3>Om mig</h3></a>
+            <a href="Projekter.html" class="valgt"><h3>Projekter</h3></a>
+            <a href="Kontakt.html"><h3>Kontakt</h3></a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
+      <div class="projekter">
       <h1>Projekter</h1>
+    </div>
+    <div class="projekttekst">
       <h2>
         Her er de forskellige projekter jeg har lavet gennem uddannelsen og i
-        fritiden
+        fritiden.
       </h2>
+    </div>
     </main>
     <section>
-        <img src="Iphone billeder/selvportrætI.svg" alt="selvportrat" width="128px">
-        <img src="Iphone billeder/ØkolarietI.svg" alt="installation" width="128px">
-        <img src="Iphone billeder/webdesignI.svg" alt="webdesign" width="128px">
-        <img src="Iphone billeder/paperartI.svg" alt="cricut" width="128px">
-        <img src="Iphone billeder/movingartI.svg" alt="animation" width="128px">
-        <img src="Iphone billeder/stopmotionI.svg" alt="fotografi" width="128px">
+      <div class=selvportrat>
+       <img src="Iphone billeder/selvportrætI.svg" alt="selvportrat" width="327px">
+      </div>
+      <div class="Illustrationer1">
+        <h3>Illustrationer - Selvportræt</h3>
+      </div>
+      <div class="portrattekst">
+      <h4>I dette projekt skulle jeg lave et selv portræt af mig selv i adobe illutstrator. Da de basale streger var lagt skulle der skabes liv i mit ansigt i form af skygger, farver og struktur med hår,øjenbryn og vipper. Jeg går op i detaljerne når det kommer til illustration, og jeg arbejdede hårdt for at lave få lavet en genkendelighed med forskellige farvekombinationer af skygger. Da det kom til øjenbryn, vipper og læber var jeg ekstra varsom med mængden af kontur, da for stor mængde ville have for kvindelige træk. <br><br>Jeg er ikke van gogh men jeg har har formået at skabe lighed og måske tildels, en lidt yngre udgave af mig selv.</h4> </div>
     </section>
+
+    <section>
+      <div class=""></div>
+      <img src="Iphone billeder/ØkolarietI.svg" alt="installation" width="327px">
+    </section>
+    <section>
+      <img src="Iphone billeder/webdesignI.svg" alt="webdesign" width="327px">
+    </section>
+    <section>
+      <img src="Iphone billeder/paperartI.svg" alt="cricut" width="327px">
+    </section>
+    <section>
+      <img src="Iphone billeder/movingartI.svg" alt="animation" width="327px">
+    </section>
+    <section>
+        <img src="Iphone billeder/stopmotionI.svg" alt="fotografi" width="327px">
+    </section>
+    
     <footer>
         <div class="footer-grid">
         <div class="facebook">
