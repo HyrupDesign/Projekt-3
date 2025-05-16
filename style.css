@@ -17,40 +17,57 @@ body {
   padding-right: 21px; /* derfor er ikonet til venstre 1px større for skabe alignment*/
 }
 
+/* dropdown menu fra w3school.com: 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*/
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+  float: right;
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+#dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: var(--background1);
+  overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  right: 0;
+  text-align: center;
+  width: 90.5vw;
 }
 
-.show {
+#dropdown-content.show {
   display: block;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
+#dropdown-content a {
+  color: var(--primary);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-family: poppins;
+  padding: 20px;
+  justify-self: center;
+  width: 100%;
 }
+
+.dropdown a:hover {
+  background-color: var(--background2);
+}
+
+/* w3school.com - slutter */
 
 .fa-bars {
   /* burgermenuen */
-  scale: 2; /* størrelsen på burgermenuen */
+  font-size: 30px; /* størrelsen på burgermenuen */
+  color: var(--secondary);
 }
 
-.fa-bars hover {
+.fa-bars:hover {
   cursor: pointer;
 }
 .logo {
@@ -86,6 +103,8 @@ body {
   font-family: poppins;
   font-weight: bold;
   padding: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 0;
 }
 ul {
@@ -103,15 +122,29 @@ ul {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "links"
+    "teksthex"
     "box";
-}
-.loesKategori {
-  grid-area: links;
 }
 .openbox {
   grid-area: box;
   padding: 16px;
+  width: 359px;
+  justify-self: center;
+  margin-bottom: 30px;
+}
+.teksthex {
+  grid-area: teksthex;
+  text-align: center;
+  background-image: url(Billeder/Blå\ hexagon.svg);
+  background-color: var(--background1);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background1);
+  margin-top: 60px;
 }
 a {
   color: #88a998;
@@ -155,8 +188,6 @@ a {
 
 /* herfra laver jeg nye sider*/
 .ommig {
-  font-family: poppins; /* hvordan linker man til hind vadodara som står i body'en? */
-
   width: 340px;
   padding: 20px;
   padding-bottom: 30px;
@@ -187,7 +218,7 @@ a {
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|family=Poppins:600|Hind%20Vadodara:400");
 
 body {
-  font-family: "Hind Vadodara";
+  font-family: "Hind Vadodara" sans-serif; /* DET ER HER DET GÅR GALT*/
   font-weight: 400;
 }
 
