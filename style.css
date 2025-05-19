@@ -106,16 +106,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   padding-bottom: 30px;
 }
 
-.knap1 {
-  background-color: var(--primary);
-  color: var(--background1);
-  font-family: poppins;
-  font-weight: bold;
-  padding: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 0;
-}
 /*
 ul {
   background-color: #fdfdfa;
@@ -288,13 +278,22 @@ a {
   justify-self: center;
 }
 
-.knapweb {
-  justify-self: center;
-  padding: 30px;
+.ctaknap {
+  background-color: var(--primary);
+  padding: 16px 20px;
+  font-weight: bold;
+  color: var(--background1);
+  border: none;
 }
 
-.knapweb:hover {
+.ctaknap:hover {
   background-color: var(--secondary);
+  border: none;
+}
+
+.center {
+  justify-self: center;
+  padding: 20px;
 }
 
 /*                                     */
