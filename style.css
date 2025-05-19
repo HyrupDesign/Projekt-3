@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*border: 1px dashed red;*/
 }
 body {
   background-color: var(--background1); /* baggrundsfarve på hele siden */
@@ -250,18 +251,22 @@ a {
   color: var(--accent);
 }
 
-.selvportratbillede {
+.projektbillede {
   justify-self: center;
   padding: 30px;
 }
-.Illustrationer1 {
-  width: 340px;
-  justify-self: center; /* WHAAAT */
+.projekttitel {
+  width: 80%;
+  justify-self: center;
+  padding-left: 20px;
   color: var(--secondary);
 }
 
-.portrattekst {
-  width: 340px;
+.lyseretekst {
+  color: var(--background1);
+}
+.projektindhold {
+  width: 80%;
   padding: 20px;
   padding-bottom: 30px;
   justify-self: center;
@@ -275,45 +280,9 @@ a {
   background-color: var(--accent);
 }
 
-.Oekobillede {
-  justify-self: center;
-  padding: 30px;
-}
-
-.ilustrationer2 {
-  padding-left: 85.5px; /* ..........*/
-  padding-right: 85.5px;
-  color: var(--background1);
-}
-
-.oekotekst {
-  width: 340px;
-  padding: 20px;
-  padding-bottom: 30px;
-  justify-self: center;
-}
-
 /*                                     */
 /*              ny sektion             */
 /*            Underenhund.dk           */
-
-.webdesignbillede {
-  justify-self: center;
-  padding: 30px;
-}
-
-.figma {
-  padding-left: 85.5px;
-  padding-right: 85.5px;
-  color: var(--secondary);
-}
-
-.webdesigntekst {
-  width: 340px;
-  padding: 20px;
-  padding-bottom: 30px;
-  justify-self: center;
-}
 
 .ctaweb {
   justify-self: center;
@@ -336,43 +305,9 @@ a {
   background-color: #88a998;
 }
 
-.cricutbillede {
-  justify-self: center;
-  padding: 30px;
-}
-
-.cricut {
-  padding-left: 85.5px;
-  padding-right: 85.5px;
-  color: var(--background1);
-}
-
-.cricuttekst {
-  width: 340px;
-  padding: 20px;
-  padding-bottom: 30px;
-  justify-self: center;
-}
-
 /*                                     */
 /*              ny sektion             */
 /*                Gyngen               */
-
-.animationbillede {
-  justify-self: center;
-  padding: 30px;
-}
-
-.Movingart {
-  padding-left: 85.5px;
-  padding-right: 85.5px;
-}
-.movingarttekst {
-  width: 340px;
-  padding: 20px;
-  padding-bottom: 30px;
-  justify-self: center;
-}
 
 .animationfilm {
   justify-self: center;
@@ -381,27 +316,10 @@ a {
 
 /*                                     */
 /*              ny sektion             */
-/*              Fotografi              */
+/*              Indesign               */
 
 .fotofarve {
   background-color: #88a998;
-}
-
-.indesignbillede {
-  justify-self: center;
-  padding: 30px;
-}
-
-.indesign {
-  padding-left: 85.5px;
-  padding-right: 85.5px;
-}
-
-.indesigntekst {
-  width: 340px;
-  padding: 20px;
-  padding-bottom: 30px;
-  justify-self: center;
 }
 
 /*                   */
@@ -502,11 +420,6 @@ a {
 /*                   */
 /*    kontakt slut   */
 /*                   */
-
-body {
-  font-family: "Hind Vadodara" sans-serif; /* DET ER HER DET GÅR GALT*/
-  font-weight: 400;
-}
 
 h1,
 h2,
