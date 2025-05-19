@@ -83,12 +83,14 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   width: 40px; /* størrelsen på det alternativelogo */
 }
 .forside {
-  background-image: url(Billeder/hulum.svg); /* hulum er billedet under tekst, logo og knap*/
-  background-color: blue; /* en kasse som hulum ligger oven på for at hulum kan have samme størrelse */
+  background-image: url(Billeder/hulum.svg); /* Billedet under tekst, logo og knap*/
+  background-color: var(
+    --primary
+  ); /* en kasse som hulum ligger oven på for at hulum kan have samme størrelse */
   background-repeat: no-repeat; /* gør at billedet ikke gentager sig flere gange */
   background-size: cover; /* gør at hulum bliver samme størrelse som background-color/kassen*/
   background-position: 6%; /* fuldt billede 100% og dette fortæller hvilken del af de 100% der skal vises */
-  height: 500px; /* skalere hvor stort billedet skal være */
+  height: 600px; /* skalere hvor stort billedet skal være */
   display: flex; /* indikere at flex metoden bliver brugt */
   align-items: left; /* indikere at elementerne skal justeres til venstre */
   flex-direction: column; /* indikere at elementerne skal ''listes''*/
@@ -181,7 +183,7 @@ a {
 
 .copyright {
   grid-area: copyright;
-  color: #fdfdfa;
+  color: var(--background1);
 }
 
 .ikoner {
@@ -202,7 +204,7 @@ a {
 .kaldemig {
   justify-self: center;
   text-align: center;
-  color: #88a998;
+  color: var(--accent);
 }
 
 .portrat {
@@ -301,7 +303,7 @@ a {
 /*                cricut               */
 
 .cricutfarve {
-  background-color: #88a998;
+  background-color: var(--accent);
 }
 
 /*                                     */
@@ -318,7 +320,7 @@ a {
 /*              Indesign               */
 
 .fotofarve {
-  background-color: #88a998;
+  background-color: var(--accent);
 }
 
 /*                   */
@@ -414,7 +416,49 @@ a {
   --secondary: #b18b44;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:700|family=Poppins:600|Hind%20Vadodara:400");
+@media (min-width: 500px) {
+  .topbar {
+    display: none;
+  }
+
+  .logo {
+    width: 150px; /* størrelse på logoet */
+  }
+
+  .hellogo {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    background-color: var(--background1);
+    justify-content: space-between; /* Skubber indholdet til hver sin ende */
+    align-items: center;
+    padding: 30px;
+    font-family: poppins, sans-serif;
+    margin: 0;
+  }
+  a {
+    color: var(--accent); /* farve på de linkede menu knapper */
+    text-decoration: none; /* fjerner stregen under menu-navnene */
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 44px; /* ifølge figma er der 44px mellem hver knap*/
+    list-style: none; /* at punktopstilling ikke har punkter*/
+  }
+
+  .forside {
+    height: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    display: none;
+  }
+}
 
 /*                   */
 /*    kontakt slut   */
