@@ -108,25 +108,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   padding-bottom: 30px;
 }
 
-/*
-ul {
-  background-color: #fdfdfa;
-  padding-top: 80px;
-  font-family: poppins;
-  font-size: 3.053rem;       
-  font-weight: 700;          
-  list-style-type: none;
-  color: #88a998;
-  text-align: center;
-  gap: 20px;
-  display: inherit;
-}
-  */
-
-/*
-a {
-  color: #88a998;
-}*/
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -417,6 +398,9 @@ a {
 }
 
 @media (min-width: 500px) {
+  /*              */
+  /*   forsiden   */
+  /*              */
   .topbar {
     display: none;
   }
@@ -438,6 +422,7 @@ a {
     font-family: poppins, sans-serif;
     margin: 0;
   }
+
   a {
     color: var(--accent); /* farve på de linkede menu knapper */
     text-decoration: none; /* fjerner stregen under menu-navnene */
@@ -452,10 +437,21 @@ a {
   .forside {
     height: 700px;
   }
+
+  .projektbillede {
+    display: none;
+  }
+  .comprojektbillede {
+    width: 50%;
+  }
 }
 
 @media (max-width: 500px) {
   .menu {
+    display: none;
+  }
+
+  .comprojektbillede {
     display: none;
   }
 }
