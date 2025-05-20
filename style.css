@@ -5,6 +5,7 @@
   /*border: 1px dashed red;*/
 }
 body {
+  font-family: "Poppins";
   background-color: var(--background1); /* baggrundsfarve på hele siden */
 }
 
@@ -191,6 +192,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 .portrat {
   justify-self: center;
   padding-top: 30px;
+  width: 300px;
 }
 
 .ommig {
@@ -313,7 +315,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 .wrapper {
   position: relative;
   width: 100%;
-  max-width: 550px;
+  max-width: 100%;
   background: var(--background1);
   padding: 30px;
   border-radius: 0%;
@@ -332,6 +334,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 }
 
 .contact-form {
+  max-width: 550px;
+  justify-self: center;
   display: flex;
   flex-direction: column;
 }
@@ -397,10 +401,55 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   --secondary: #b18b44;
 }
 
-@media (min-width: 500px) {
+/*                   */
+/*    kontakt slut   */
+/*                   */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+html {
+  font-size: 90%;
+}
+
+h1 {
+  font-size: 2.489rem; /* 48.8px */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.074rem; /* 39.04px */
+}
+
+h3 {
+  font-size: 1.728rem; /* 31.2px */
+}
+
+h4 {
+  font-size: 1.44rem; /* 24.96px */
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+  font-family: poppins;
+  font-weight: bold;
+}
+
+small {
+  font-size: 0.8rem; /* 12.8px */
+}
+
+@media (min-width: 600px) {
   /*              */
   /*   forsiden   */
-  /*              */
+  /*   computer   */
   .topbar {
     display: none;
   }
@@ -410,6 +459,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   }
 
   .hellogo {
+    display: none;
+  }
+
+  .langtlogo {
     display: none;
   }
 
@@ -433,20 +486,117 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
     gap: 44px; /* ifølge figma er der 44px mellem hver knap*/
     list-style: none; /* at punktopstilling ikke har punkter*/
   }
+  .tekstForside {
+    grid-area: tekstForside;
+    padding: 0;
+  }
+
+  .knak {
+    display: none;
+  }
+
+  .forsideknap {
+    grid-area: forsideknap;
+    place-self: end;
+    margin: 50px;
+  }
 
   .forside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     height: 700px;
+    grid-template-areas: "tekstForside ." ". forsideknap";
   }
+
+  .portrat {
+    grid-area: portrat;
+    width: 100%;
+  }
+
+  .ommig {
+    grid-area: ommig;
+  }
+
+  .ommig-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "portrat ommig";
+
+    padding: 30px;
+  }
+  /*------------------*/
+  /*-----projekter----*/
+  /*-----computer-----*/
 
   .projektbillede {
     display: none;
   }
   .comprojektbillede {
+    grid-area: comprojektbillede;
+    width: 100%;
+  }
+
+  .projekttitel {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .projektindhold {
+    width: 100%;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .projektBlock {
+    grid-area: projektBlock;
+    margin: 0px;
+  }
+
+  .projektEkstra {
+    grid-area: projektEkstra;
+  }
+
+  .ctaknap {
+    grid-area: ctaknap;
+  }
+  .projektogtekst-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "projektBlock comprojektbillede"
+      "projektEkstra comprojektbillede";
+    padding: 30px;
+  }
+
+  .wrapper {
+    justify-self: center;
+  }
+
+  .contact-form {
+    max-width: none;
     width: 50%;
+  }
+
+  .kontaktundertitel {
+    max-width: none;
+  }
+
+  html {
+    font-size: 100%;
+  }
+
+  .grid-container {
+    grid-template-areas: "teksthex box";
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .menu {
     display: none;
   }
@@ -454,49 +604,4 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   .comprojektbillede {
     display: none;
   }
-}
-
-/*                   */
-/*    kontakt slut   */
-/*                   */
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Poppins";
-  font-weight: 600;
-}
-
-html {
-  font-size: 50%;
-} /* 16px */
-
-h1 {
-  font-size: 3.053rem; /* 48.8px */
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.442rem; /* 39.04px */
-}
-
-h3 {
-  font-size: 1.954rem; /* 31.2px */
-}
-
-h4 {
-  font-size: 1.563rem; /* 24.96px */
-  font-weight: 100;
-}
-
-h5 {
-  font-size: 1.25rem; /* 20px */
-  font-family: poppins;
-  font-weight: bold;
-}
-
-small {
-  font-size: 0.8rem; /* 12.8px */
 }
