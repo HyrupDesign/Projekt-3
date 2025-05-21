@@ -232,126 +232,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   justify-self: center;
   padding: 30px;
 }
-/*                           */
-/* selvportræt billede slide */
-/*                           */
-button {
-  margin: 40px;
-  padding: 12px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
-.loopknap {
-  width: 30px;
-  height: 30px;
-}
-
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.slideshow-container {
-  position: relative;
-  max-width: 700px;
-  margin: 100px auto;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  font-size: 40px;
-  color: white;
-  padding: 16px;
-  margin-top: -22px;
-  transition: 0.3s;
-  user-select: none;
-}
-
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
-}
-
-.prev:hover,
-.next:hover,
-.close:hover {
-  color: #ccc;
-}
-
-.skift1 {
-  background-image: url(loop.svg);
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.skift1:hover {
-  background-image: url(Skærmbillede\ 2025-04-29\ kl.\ 22.03.02.png);
-  cursor: pointer;
-}
-
-.skift2 {
-  background-image: url();
-  width: 401px;
-  height: 505px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.skift2:hover {
-  background-image: url(movingartDhover-kopi.svg);
-  cursor: pointer;
-}
-
-.skift3 {
-  background-image: url(loop.svg);
-  width: 30px;
-  height: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.skift3:hover {
-  background-image: url(Skærmbillede\ 2025-04-29\ kl.\ 22.03.02.png);
-  cursor: pointer;
-}
-
-/*                           */
-/*   billede slide slutter   */
-/*                           */
-
 .projekttitel {
   width: 80%;
   justify-self: center;
@@ -668,10 +548,129 @@ small {
   .projektbillede {
     display: none;
   }
-  .comprojektbillede {
+  /* .comprojektbillede {
     grid-area: comprojektbillede;
     width: 100%;
+  } */
+
+  /*                    */
+  /*    slide show      */
+  /*                    */
+
+  button {
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
   }
+
+  .loopknap {
+    width: 30px;
+    height: 30px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 700px;
+    margin: 100px auto;
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    padding: 16px;
+    margin-top: -22px;
+    transition: 0.3s;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+
+  .prev:hover,
+  .next:hover,
+  .close:hover {
+    color: #ccc;
+  }
+
+  .skift1 {
+    background-image: url(computerbilleder/selvportrætD.svg);
+    width: 655px;
+    height: 822.594px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .skift1:hover {
+    background-image: url(computerbilleder/selvportrætDhover.svg);
+    cursor: pointer;
+  }
+
+  .skift2 {
+    background-image: url(MovingartD-kopi.svg);
+    width: 401px;
+    height: 505px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .skift2:hover {
+    background-image: url(movingartDhover-kopi.svg);
+    cursor: pointer;
+  }
+
+  .skift3 {
+    background-image: url(loop.svg);
+    width: 30px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .skift3:hover {
+    background-image: url(Skærmbillede\ 2025-04-29\ kl.\ 22.03.02.png);
+    cursor: pointer;
+  }
+
+  /*                       */
+  /*   slide slutter       */
+  /*                       */
 
   .projekttitel {
     width: 100%;
@@ -696,6 +695,10 @@ small {
   .ctaknap {
     grid-area: ctaknap;
   }
+  .skift1 {
+    grid-area: skift1;
+  }
+
   .projektogtekst-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -703,8 +706,8 @@ small {
     gap: 10px;
     grid-auto-flow: row;
     grid-template-areas:
-      "projektBlock comprojektbillede"
-      "projektEkstra comprojektbillede";
+      "projektBlock skift1"
+      "projektEkstra skift1";
     padding: 30px;
   }
   /*------------------------*/
