@@ -71,11 +71,11 @@
     <div id="slideshow1" class="popup">
       <span class="close" onclick="closeSlideshow('slideshow1')">&times;</span>
       <div class="slideshow-container">
-        <img class="slide" src="openkasse-kopi.svg" alt="Slide 1" />
-        <img class="slide" src="popup-close.svg" alt="Slide 2" />
+        <img class="slide" src="slideshowbilleder/IMG_1082.JPG" alt="Slide 1" />
+        <img class="slide" src="slideshowbilleder/selvportræt.png" alt="Slide 2" />
         <img
           class="slide"
-          src="Skærmbillede 2025-04-29 kl. 22.03.02.png"
+          src="slideshowbilleder/Mit Selvportræt.png"
           alt="Slide 3"
         />
         <a class="prev" onclick="changeSlide(-1, 'slideshow1')">&#10094;</a>
@@ -106,7 +106,22 @@
       <!--projektbilledet til computer-->
       <div class="projektogtekst-grid">
       <div class="oekoobillede comprojektbillede">
-        <img src="Desktop billeder/ØkolarietD.svg" alt="oekoobillede">
+        <!-- billede slide 2 -->
+  <button onclick="openSlideshow('slideshow2')">
+    <div class="skift2"></div>
+  </button>
+  <div id="slideshow2" class="popup">
+    <span class="close" onclick="closeSlideshow('slideshow2')">&times;</span>
+    <div class="slideshow-container">
+      <img class="slide" src="slideshowbilleder/plakat 3-kopi.png" alt="Slide 1" />
+      <img class="slide" src="slideshowbilleder/ifjdsoijf2-kopi.png" alt="Slide 2" />
+      <img class="slide" src="slideshowbilleder/Spil_steps-kopi.png" alt="Slide 3" />
+      <a class="prev" onclick="changeSlide(-1, 'slideshow2')">&#10094;</a>
+      <a class="next" onclick="changeSlide(1, 'slideshow2')">&#10095;</a>
+    </div>
+  </div>
+        
+        <!-- <img src="Desktop billeder/ØkolarietD.svg" alt="oekoobillede"> -->
       </div>
       <!--projektbilledet til mobil-->
       <div class="Oekobillede projektbillede">

@@ -1,12 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+html {
+  font-size: 70%;
+}
+/* størrelser målt igennem https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff&fonts=Poppins-Poppins*/
+
+h1 {
+  font-size: 2.489rem; /* 39.84px */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.074rem; /* 33.12px */
+}
+
+h3 {
+  font-size: 1.728rem; /* 27.68px */
+}
+
+h4 {
+  font-size: 1.44rem; /* 23.04px */
+}
+
+h5 {
+  font-size: 1.2rem; /* 19.2px */
+  font-weight: bold;
+}
+
+small {
+  font-size: 0.833rem; /* 13.28px */
+}
+
+:root {
+  --background1: #fdfdfa;
+  --background2: #ebebe3;
+  --accent: #88a998;
+  --primary: #114761;
+  --secondary: #b18b44;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /*border: 1px dashed red;*/
+  box-sizing: border-box; /*border: 1px dashed red; */
 }
 body {
-  font-family: "Poppins";
+  font-family: "poppins";
+  font-weight: 400;
   background-color: var(--background1); /* baggrundsfarve på hele siden */
+  /* font-family: "Poppins"; /
+  background-color: var(--background1); / baggrundsfarve på hele siden */
 }
 
 .topbar {
@@ -408,48 +460,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 /*    kontakt slut   */
 /*                   */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Poppins";
-  font-weight: 600;
-}
-
-html {
-  font-size: 70%;
-}
-/* størrelser målt igennem https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff&fonts=Poppins-Poppins*/
-
-h1 {
-  font-size: 2.489rem; /* 39.84px */
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.074rem; /* 33.12px */
-}
-
-h3 {
-  font-size: 1.728rem; /* 27.68px */
-}
-
-h4 {
-  font-size: 1.44rem; /* 23.04px */
-  font-weight: 600;
-}
-
-h5 {
-  font-size: 1.2rem; /* 19.2px */
-  font-family: poppins;
-  font-weight: bold;
-}
-
-small {
-  font-size: 0.833rem; /* 13.28px */
-}
-
 @media (min-width: 600px) {
   /*              */
   /*   forsiden   */
@@ -594,13 +604,14 @@ small {
 
   .slideshow-container {
     position: relative;
+    width: 90%;
     max-width: 700px;
     margin: 100px auto;
   }
 
   .slide {
-    display: none;
     width: 100%;
+    height: auto;
   }
 
   .prev,
@@ -643,7 +654,7 @@ small {
   }
 
   .skift2 {
-    background-image: url(MovingartD-kopi.svg);
+    background-image: url(computerbilleder/ØkolarietD.svg);
     width: 401px;
     height: 505px;
     background-size: cover;
@@ -651,12 +662,12 @@ small {
   }
 
   .skift2:hover {
-    background-image: url(movingartDhover-kopi.svg);
+    background-image: url(computerbilleder/økolarietDhover.svg);
     cursor: pointer;
   }
 
   .skift3 {
-    background-image: url(loop.svg);
+    background-image: url(computerbilleder/PaperartD.svg);
     width: 30px;
     height: auto;
     background-size: cover;
@@ -664,7 +675,7 @@ small {
   }
 
   .skift3:hover {
-    background-image: url(Skærmbillede\ 2025-04-29\ kl.\ 22.03.02.png);
+    background-image: url(computerbilleder/paperartDhover.svg);
     cursor: pointer;
   }
 
