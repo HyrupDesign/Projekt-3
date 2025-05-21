@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,10 +21,10 @@
             <nav class="menu">
           <img src="Billeder/hellogo.svg" alt="Logo" class="logo" />
           <ul class="nav-links">
-            <li><a href="Forside.html"><h3>Hjem</h3></a></li>
-            <li><a href="Ommig.html"><h3>Om mig</h3></a></li>
-            <li><a href="Projekter.html"><h3>Projekter</h3></a></li>
-            <li><a href="Kontakt.html"><h3>Kontakt</h3></a></li>
+            <li><a href="index.html"><h4>Hjem</h4></a></li>
+            <li><a href="Ommig.html"><h4>Om mig</h4></a></li>
+            <li><a href="Projekter.html"><h4>Projekter</h4></a></li>
+            <li><a href="Kontakt.html"><h4>Kontakt</h4></a></li>
       </ul>
     </nav>
       <!----------------------------->
@@ -41,7 +41,7 @@
             <i class="fa-solid fa-bars"></i>
           </div>
           <div id="dropdown-content" class="dropdown-content">
-            <a href="Forside.html"><h3>Hjem</h3></a>
+            <a href="index.html"><h3>Hjem</h3></a>
             <a href="Ommig.html"><h3>Om mig</h3></a>
             <a href="Projekter.html" class="valgt"><h3>Projekter</h3></a>
             <a href="Kontakt.html"><h3>Kontakt</h3></a>
@@ -54,16 +54,37 @@
       <h1>Projekter</h1>
     </div>
     <div class="projekttekst">
-      <h2>
+      <h3>
         Her er de forskellige projekter jeg har lavet gennem uddannelsen og i
         fritiden.
-      </h2>
+      </h3>
     </div>
     </main>
     <section>
       <!--projektbilledet til computer-->
       <div class="projektogtekst-grid">
       <div class="selvportraat comprojektbillede">
+        <!------------billede slide 1 -------------->
+        <button onclick="openSlideshow('slideshow1')">
+      <div class="skift1"></div>
+    </button>
+    <!--husk at ændre billede fil-->
+    <div id="slideshow1" class="popup">
+      <span class="close" onclick="closeSlideshow('slideshow1')">&times;</span>
+      <div class="slideshow-container">
+        <img class="slide" src="openkasse-kopi.svg" alt="Slide 1" />
+        <img class="slide" src="popup-close.svg" alt="Slide 2" />
+        <img
+          class="slide"
+          src="Skærmbillede 2025-04-29 kl. 22.03.02.png"
+          alt="Slide 3"
+        />
+        <a class="prev" onclick="changeSlide(-1, 'slideshow1')">&#10094;</a>
+        <a class="next" onclick="changeSlide(1, 'slideshow1')">&#10095;</a>
+      </div>
+    </div>
+
+
         <img src="Desktop billeder/selvportrætD.svg" alt="selvportraat">
       </div>
       <!--projektbilledet til mobil-->

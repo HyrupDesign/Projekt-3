@@ -224,12 +224,134 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   justify-self: center;
   text-align: center;
   color: var(--accent);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .projektbillede {
   justify-self: center;
   padding: 30px;
 }
+/*                           */
+/* selvportræt billede slide */
+/*                           */
+button {
+  margin: 40px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.loopknap {
+  width: 30px;
+  height: 30px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 700px;
+  margin: 100px auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  padding: 16px;
+  margin-top: -22px;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover,
+.close:hover {
+  color: #ccc;
+}
+
+.skift1 {
+  background-image: url(loop.svg);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skift1:hover {
+  background-image: url(Skærmbillede\ 2025-04-29\ kl.\ 22.03.02.png);
+  cursor: pointer;
+}
+
+.skift2 {
+  background-image: url();
+  width: 401px;
+  height: 505px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skift2:hover {
+  background-image: url(movingartDhover-kopi.svg);
+  cursor: pointer;
+}
+
+.skift3 {
+  background-image: url(loop.svg);
+  width: 30px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skift3:hover {
+  background-image: url(Skærmbillede\ 2025-04-29\ kl.\ 22.03.02.png);
+  cursor: pointer;
+}
+
+/*                           */
+/*   billede slide slutter   */
+/*                           */
+
 .projekttitel {
   width: 80%;
   justify-self: center;
@@ -334,7 +456,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 }
 
 .contact-form {
-  max-width: 550px;
+  width: 100%;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -371,6 +493,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   color: var(--primary);
   font-family: poppins;
   font-weight: 600;
+  font-size: 19.2px;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
@@ -415,35 +538,36 @@ h5 {
 }
 
 html {
-  font-size: 90%;
+  font-size: 70%;
 }
+/* størrelser målt igennem https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff&fonts=Poppins-Poppins*/
 
 h1 {
-  font-size: 2.489rem; /* 48.8px */
+  font-size: 2.489rem; /* 39.84px */
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.074rem; /* 39.04px */
+  font-size: 2.074rem; /* 33.12px */
 }
 
 h3 {
-  font-size: 1.728rem; /* 31.2px */
+  font-size: 1.728rem; /* 27.68px */
 }
 
 h4 {
-  font-size: 1.44rem; /* 24.96px */
+  font-size: 1.44rem; /* 23.04px */
   font-weight: 600;
 }
 
 h5 {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.2rem; /* 19.2px */
   font-family: poppins;
   font-weight: bold;
 }
 
 small {
-  font-size: 0.8rem; /* 12.8px */
+  font-size: 0.833rem; /* 13.28px */
 }
 
 @media (min-width: 600px) {
@@ -486,9 +610,19 @@ small {
     gap: 44px; /* ifølge figma er der 44px mellem hver knap*/
     list-style: none; /* at punktopstilling ikke har punkter*/
   }
+
+  /*------------------------*/
+  /*---------forside--------*/
+  /*------------------------*/
+
+  .grid-container {
+    grid-template-areas: "teksthex box";
+  }
+
   .tekstForside {
     grid-area: tekstForside;
     padding: 0;
+    margin: 50px;
   }
 
   .knak {
@@ -573,6 +707,9 @@ small {
       "projektEkstra comprojektbillede";
     padding: 30px;
   }
+  /*------------------------*/
+  /*--- kontakt formular----*/
+  /*------------------------*/
 
   .wrapper {
     justify-self: center;
@@ -589,10 +726,6 @@ small {
 
   html {
     font-size: 100%;
-  }
-
-  .grid-container {
-    grid-template-areas: "teksthex box";
   }
 }
 
