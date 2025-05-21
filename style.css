@@ -6,7 +6,7 @@ h3,
 h4,
 h5 {
   font-family: "Poppins";
-  font-weight: 300;
+  font-weight: 600;
 }
 
 html {
@@ -55,7 +55,7 @@ small {
 }
 body {
   font-family: "poppins";
-  font-weight: 400;
+  font-weight: 300;
   background-color: var(--background1); /* baggrundsfarve på hele siden */
   /* font-family: "Poppins"; /
   background-color: var(--background1); / baggrundsfarve på hele siden */
@@ -642,8 +642,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 
   .skift1 {
     background-image: url(computerbilleder/selvportrætD.svg);
-    width: 655px;
-    height: 822.594px;
+    width: 401px;
+    height: 505px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -668,8 +668,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 
   .skift3 {
     background-image: url(computerbilleder/PaperartD.svg);
-    width: 30px;
-    height: auto;
+    width: 401px;
+    height: 505px;
     background-size: cover;
     background-repeat: no-repeat;
   }
