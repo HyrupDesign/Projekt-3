@@ -145,7 +145,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   background-position: 6%; /* fuldt billede 100% og dette fortæller hvilken del af de 100% der skal vises */
   height: 600px; /* skalere hvor stort billedet skal være */
   display: flex; /* indikere at flex metoden bliver brugt */
-  align-items: left; /* indikere at elementerne skal justeres til venstre */
+  /* align-items: left;  indikere at elementerne skal justeres til venstre */
   flex-direction: column; /* indikere at elementerne skal ''listes''*/
   justify-content: center; /* indikere at det skal centeres på background-image */
   padding: 20px; /* indikere hvor meget luft der er fra kant til elementer (logo,tekst og knap) */
@@ -159,6 +159,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 .tekstForside {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.knap1 {
+  font-size: 1.44rem; /* 23.04px */
 }
 
 .grid-container {
@@ -319,7 +323,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 
 .ctaknap {
   background-color: var(--primary);
-  padding: 16px 20px;
+  padding: 26px 30px;
   font-weight: bold;
   color: var(--background1);
   border: none;
@@ -558,10 +562,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   .projektbillede {
     display: none;
   }
-  /* .comprojektbillede {
+  .comprojektbillede {
     grid-area: comprojektbillede;
     width: 100%;
-  } */
+    padding-left: 200px;
+  }
 
   /*                    */
   /*    slide show      */
@@ -706,9 +711,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   .ctaknap {
     grid-area: ctaknap;
   }
-  .skift1 {
-    grid-area: skift1;
-  }
 
   .projektogtekst-grid {
     display: grid;
@@ -717,9 +719,12 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
     gap: 10px;
     grid-auto-flow: row;
     grid-template-areas:
-      "projektBlock skift1"
-      "projektEkstra skift1";
-    padding: 30px;
+      "projektBlock comprojektbillede"
+      "projektEkstra comprojektbillede";
+    padding: 30px; /*-------------*/
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   /*------------------------*/
   /*--- kontakt formular----*/
