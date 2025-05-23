@@ -270,6 +270,86 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 /*           Projekter start          */
 /*             selvportræt            */
 
+/*                             */
+/*     slide show monil        */
+/*                             */
+
+button {
+  margin: 40px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.loopknap {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 700px;
+  margin: 100px auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  padding: 16px;
+  margin-top: -22px;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover,
+.close:hover {
+  color: #ccc;
+}
+/*                               */
+/*     slide show mobil slut     */
+/*                               */
+
 .projekter {
   padding: 30px;
   justify-self: center;
@@ -565,12 +645,88 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   .comprojektbillede {
     grid-area: comprojektbillede;
     width: 100%;
+    justify-self: stretch;
+    align-self: stretch;
   }
 
   /*                    */
   /*    slide show      */
   /*                    */
+  button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    /* height: auto;
+    object-fit: cover;
+    display: block; */
+  }
 
+  .loopknap {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 700px;
+    margin: 100px auto;
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    padding: 16px;
+    margin-top: -22px;
+    transition: 0.3s;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+
+  .prev:hover,
+  .next:hover,
+  .close:hover {
+    color: #ccc;
+  }
   /*                       */
   /*   slide slutter       */
   /*                       */
@@ -608,10 +764,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
     grid-template-areas:
       "projektBlock comprojektbillede"
       "projektEkstra comprojektbillede";
-    padding: 30px; /*-------------*/
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 30px;
   }
   /*------------------------*/
   /*--- kontakt formular----*/

@@ -64,22 +64,52 @@
       <!--projektbilledet til computer-->
       <div class="projektogtekst-grid">
         <div class="selvportraat comprojektbillede"> 
-           <img src="Desktop billeder/selvportrætD.svg"alt="selvportraat"> 
            
-           <!--∆∆∆∆∆∆∆∆∆∆∆ hvis man sletter den så fucker det -->
         <!------------billede slide 1 -------------->
-        
+            <button onclick="openSlideshow('slideshow1')">
+      <img src="Desktop billeder/selvportrætDhover.svg" alt="Åbn slideshow 1" class="loopknap" />
+      <!--galleri billede-->
+    </button>
+    <div id="slideshow1" class="popup">
+      <span class="close" onclick="closeSlideshow('slideshow1')">&times;</span>
+      <div class="slideshow-container">
+        <img class="slide" src="slideshowbilleder/IMG_1082.JPG" alt="Slide 1" />
+        <img class="slide" src="slideshowbilleder/selvportræt.png" alt="Slide 2" />
+        <img class="slide" src="slideshowbilleder/Mit Selvportræt.png" alt="Slide 3" />
+        <a class="prev" onclick="changeSlide(-1, 'slideshow1')">&#10094;</a>
+        <a class="next" onclick="changeSlide(1, 'slideshow1')">&#10095;</a>
+      </div>
+    </div>
+
+            
 
        
       </div>
       <!--projektbilledet til mobil-->
       <div class="selvportratbillede projektbillede">
-       <img src="Iphone billeder/selvportrætI.svg" alt="selvportrat" width="327px">
+       <!-- <img src="Iphone billeder/selvportrætI.svg" alt="selvportrat" width="327px"> -->
+       <button onclick="openSlideshow('slideshow4')">
+      <img src="Iphone billeder/selvportrætI.svg" alt="Åbn slideshow 4" class="loopknap" width="327px"/>
+    </button>
+    <div id="slideshow4" class="popup">
+      <span class="close" onclick="closeSlideshow('slideshow4')">&times;</span>
+      <div class="slideshow-container">
+        <img class="slide" src="slideshowbilleder/IMG_1082.JPG" alt="Slide 1" alt="slide 1"/> 
+        <img class="slide" src="slideshowbilleder/selvportræt.png" alt="Slide 2" alt="slide 2"/>
+        <img class="slide" src="slideshowbilleder/Mit Selvportræt.png" alt="Slide 3" alt="slide 3"/>
+        <a class="prev" onclick="changeSlide(-1, 'slideshow4')">&#10094;</a>
+        <a class="next" onclick="changeSlide(1, 'slideshow4')">&#10095;</a>
+      </div>
+    </div>
+       
+      
       </div>
       <div class="projektBlock">
       <div class="illustrationer1 projekttitel">
         <h4>Illustrationer - Selvportræt</h4>
       </div>
+      
+      
       <div class="portrattekst projektindhold">
       <p>I dette projekt skulle jeg lave et selv portræt af mig selv i adobe illustrator. Da de basale streger var lagt skulle der skabes liv i mit ansigt i form af skygger, farver og struktur med hår,øjenbryn og vipper. Jeg går op i detaljerne når det kommer til illustration, og jeg arbejdede hårdt for at lave få lavet en genkendelighed med forskellige farvekombinationer af skygger. Da det kom til øjenbryn, vipper og læber var jeg ekstra varsom med mængden af kontur, da for stor mængde ville give for kvindelige træk. <br><br>Jeg er ikke van gogh men jeg har har formået at skabe lighed og måske tildels, en lidt yngre udgave af mig selv.</p> 
     </div>
@@ -92,15 +122,43 @@
       <!--projektbilledet til computer-->
       <div class="projektogtekst-grid">
       <div class="oekoobillede comprojektbillede">
-      <img src="Desktop billeder/ØkolarietD.svg" alt="oekoobillede"> 
+      
         <!-- billede slide 2 -->
+          <button onclick="openSlideshow('slideshow2')">
+      <img src="Desktop billeder/økolarietDhover.svg" alt="Åbn slideshow 2" class="loopknap" />
+      <!--galleri billede 2-->
+    </button>
+    <div id="slideshow2" class="popup">
+      <span class="close" onclick="closeSlideshow('slideshow2')">&times;</span>
+      <div class="slideshow-container">
+        <img class="slide" src="slideshowbilleder/plakat 3-kopi.png" alt="Slide 1" />
+        <img class="slide" src="slideshowbilleder/ifjdsoijf2-kopi.png" alt="Slide 2" />
+        <img class="slide" src="slideshowbilleder/Spil_steps-kopi.png" alt="Slide 3" />
+        <a class="prev" onclick="changeSlide(-2, 'slideshow2')">&#10094;</a>
+        <a class="next" onclick="changeSlide(2, 'slideshow2')">&#10095;</a>
+      </div>
+    </div>
   
         
         
       </div>
       <!--projektbilledet til mobil-->
       <div class="Oekobillede projektbillede">
-      <img src="Iphone billeder/ØkolarietI.svg" alt="installation" width="327px"></div>
+      <!-- <img src="Iphone billeder/ØkolarietI.svg" alt="installation" width="327px"> -->
+      <button onclick="openSlideshow('slideshow5')">
+  <img src="Iphone billeder/ØkolarietI.svg" alt="Åbn slideshow 5" class="loopknap" />
+</button>
+<div id="slideshow5" class="popup">
+  <span class="close" onclick="closeSlideshow('slideshow5')">&times;</span>
+  <div class="slideshow-container">
+    <img class="slide" src="slideshowbilleder/plakat 3-kopi.png" alt="Slide 1" />
+    <img class="slide" src="slideshowbilleder/ifjdsoijf2-kopi.png" alt="Slide 2" />
+    <img class="slide" src="slideshowbilleder/Spil_steps-kopi.png" alt="Slide 3" />
+    <a class="prev" onclick="changeSlide(-1, 'slideshow5')">&#10094;</a>
+    <a class="next" onclick="changeSlide(1, 'slideshow5')">&#10095;</a>
+  </div>
+</div>
+    </div>
       <div class="projektBlock">
       <div class="ilustrationer2 projekttitel lyseretekst"><h4>Illustrationer - Installations projekt: "Skovspire"</h4></div>
       <div class="oekotekst projektindhold">
@@ -167,11 +225,43 @@ skabe en plakat gennem Adobe illustrator
       <!--projektbilledet til computer-->
       <div class="projektogtekst-grid">
       <div class="criicutbillede comprojektbillede">
-        <img src="Desktop billeder/PaperartD.svg" alt="criicutbillede"> 
+        <!-- <img src="Desktop billeder/PaperartD.svg" alt="criicutbillede">  -->
+        <!-- slide show 3-->
+        <button onclick="openSlideshow('slideshow3')">
+      <img src="Desktop billeder/paperartDhover.svg" alt="Åbn slideshow 3" class="loopknap" />
+    </button>
+    <div id="slideshow3" class="popup">
+      <span class="close" onclick="closeSlideshow('slideshow3')">&times;</span>
+      <div class="slideshow-container">
+        <img class="slide" src="slideshowbilleder/GITTE OG HANS.svg" alt="Slide 1" />
+        <img class="slide" src="slideshowbilleder/2.svg" alt="Slide 2" />
+        <img class="slide" src="slideshowbilleder/3png.png" alt="Slide 3" />
+        <img class="slide" src="slideshowbilleder/4.png" alt="Slide 4" />
+        <img class="slide" src="slideshowbilleder/5.png" alt="Slide 5" />
+        <a class="prev" onclick="changeSlide(-1, 'slideshow3')">&#10094;</a>
+        <a class="next" onclick="changeSlide(1, 'slideshow3')">&#10095;</a>
+      </div>
+    </div>
       </div>
       <!--projektbilledet til mobil-->
       <div class="cricutbillede projektbillede">
-        <img src="Iphone billeder/paperartI.svg" alt="cricut" width="327px">
+        <!-- <img src="Iphone billeder/paperartI.svg" alt="cricut" width="327px"> -->
+        <button onclick="openSlideshow('slideshow6')">
+  <img src="Iphone billeder/paperartI.svg" alt="Åbn slideshow 6" class="loopknap" />
+</button>
+<div id="slideshow6" class="popup">
+  <span class="close" onclick="closeSlideshow('slideshow6')">&times;</span>
+  <div class="slideshow-container">
+    <img class="slide" src="slideshowbilleder/GITTE OG HANS.svg" alt="Slide 1" />
+    <img class="slide" src="slideshowbilleder/2.svg" alt="Slide 2" />
+    <img class="slide" src="slideshowbilleder/3png.png" alt="Slide 3" />
+    <img class="slide" src="slideshowbilleder/4.png" alt="Slide 4" />
+        <img class="slide" src="slideshowbilleder/5.png" alt="Slide 5" />
+    <a class="prev" onclick="changeSlide(-1, 'slideshow6')">&#10094;</a>
+    <a class="next" onclick="changeSlide(1, 'slideshow6')">&#10095;</a>
+  </div>
+</div>
+
       </div>
       <div class="projektBlock">
       <div class="cricut projekttitel lyseretekst">
