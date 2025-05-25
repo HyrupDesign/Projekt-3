@@ -275,7 +275,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 /*                             */
 
 button {
-  margin: 40px;
   padding: 12px 20px;
   font-size: 18px;
   cursor: pointer;
@@ -795,5 +794,9 @@ button {
 
   .comprojektbillede {
     display: none;
+  }
+
+  .button {
+    margin: 0;
   }
 }
