@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="da">
+<!DOCTYPE html> <!-- Deklarerer HTML5 som dokumenttype -->
+<html lang="da"> <!-- Angiver sprog til dansk -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="designhyrup.css" />  computer css -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" /> <!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Gør siden responsiv på mobile enheder -->
+    <link rel="stylesheet" href="style.css" /><!-- linker til min CSS style.css -->
     <script
       src="https://kit.fontawesome.com/5f197fc237.js"
       crossorigin="anonymous"
     ></script>
     <script src="dropdown.js"></script>
-    <!-- burger menu fra fontawsome-->
+    <!-- burger menu ikon fra fontawsome-->
     <title>Projekter</title>
   </head>
   <body>
@@ -19,31 +18,29 @@
       <!------Computer versiom------>
       <!---------------------------->
             <nav class="__menu">
-          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo" />
-          <ul class="nav__links">
-            <li><a href="index.html"><h4>HJEM</h4></a></li>
-            <li><a href="Ommig.html"><h4>OM MIG</h4></a></li>
-            <li><a href="Projekter.html"><h4>PROJEKTER</h4></a></li>
-            <li><a href="Kontakt.html"><h4>KONTAKT</h4></a></li>
+          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo" /><!-- Viser det lange logo i venstre side -->
+          <ul class="nav__links"> <!-- Navigationens links -->
+            <li><a href="index.html"><h4>HJEM</h4></a></li> <!-- Link til forsiden -->
+            <li><a href="Ommig.html"><h4>OM MIG</h4></a></li> <!-- Link til "Om mig"-side -->
+            <li><a href="Projekter.html"><h4>PROJEKTER</h4></a></li> <!-- Link til projekter -->
+            <li><a href="Kontakt.html"><h4>KONTAKT</h4></a></li> <!-- Link til kontaktside -->
       </ul>
     </nav>
       <!----------------------------->
       <!--------Mobil version-------->
       <!----------------------------->
       <div class="top__bar">
-        <div class="__logo">
-          <!--logoet oppe i venstre hjørne-->
-          <img src="Billeder/alternativlogo.svg" alt="__logo" />
-          <!-- billedet loget-->
+        <div class="__logo"><!--logoet oppe i venstre hjørne-->
+          <img src="Billeder/alternativlogo.svg" alt="__logo" /> <!-- Alternativt logo til mobil -->
         </div>
         <div class="dropdown">
-          <div class="burgermenuIkon" onclick="myFunction()">
-            <i class="fa-solid fa-bars"></i>
+          <div class="burgermenuIkon" onclick="myFunction()"> <!-- Klik-ikon til dropdown-menu -->
+            <i class="fa-solid fa-bars"></i><!-- Burger-ikon fra Font Awesome -->
           </div>
-          <div id="dropdown-content" class="dropdown-content">
+          <div id="dropdown-content" class="dropdown-content"> <!-- Selve dropdown-menuen -->
             <a href="index.html"><h3>HJEM</h3></a>
             <a href="Ommig.html"><h3>OM MIG</h3></a>
-            <a href="Projekter.html" class="dropdown__link dropdown__link--valgt"><h3>PROJEKTER</h3></a> <!-- bem = block med elements og med modifier-->
+            <a href="Projekter.html" class="dropdown__link dropdown__link--valgt"><h3>PROJEKTER</h3></a> <!-- bem = block med elements og med modifier--> <!-- Viser at brugeren er på "hjem" -->
             <a href="Kontakt.html"><h3>KONTAKT</h3></a>
           </div>
         </div>
@@ -361,11 +358,11 @@ skabe en plakat gennem Adobe illustrator
     
      <footer>
       <div class="footer__grid">
-        <div class="__facebook">
+        <div class="footer__icon--facebook">
           <a href="https://www.facebook.com/mikkel.h.johansen.7/">
           <img src="Billeder/faceikon.svg" alt="faceikon" /></a>
         </div>
-        <div class="__insta">
+        <div class="footer__icon--insta">
           <a  href="https://www.instagram.com/mhyrup/">
           <img src="Billeder/instaikon.svg" alt="instaicon" /></a>
         </div>

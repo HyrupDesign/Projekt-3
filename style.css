@@ -182,7 +182,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 }
 .open__box {
   grid-area: box;
-  padding: 16px;
+  padding-top: 45px;
   width: 359px;
   justify-self: center;
   margin-bottom: 30px;
@@ -215,13 +215,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   justify-items: center;
   align-items: center;
 }
-.__facebook {
+.footer__icon--facebook {
   grid-area: facebook;
   width: 40px;
   padding-top: 70px;
   justify-self: right;
 }
-.__insta {
+.footer__icon--insta {
   grid-area: insta;
   width: 40px;
   padding-top: 70px;
@@ -416,7 +416,7 @@ button {
   border: none;
 }
 
-.ctaknap:hover {
+.cta__knap:hover {
   background-color: var(--secondary);
   border: none;
 }
@@ -479,7 +479,7 @@ button {
 }
 
 .contact-form {
-  width: 100%;
+  width: 70%;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -616,6 +616,10 @@ button {
     margin: 50px;
   }
 
+  .forside__knap:hover{
+    background-color: var(--secondary);
+  }
+
   .__forside {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -657,6 +661,7 @@ button {
     width: 100%;
     justify-self: stretch;
     align-self: stretch;
+    padding: 30px;
   }
 
   
@@ -757,6 +762,7 @@ button {
   .projekt__Block {
     grid-area: projektBlock;
     margin: 0px;
+    padding: 30px
   }
 
   .projekt__Ekstra {
@@ -788,7 +794,7 @@ button {
 
   .contactform {
     max-width: 600px;
-    width: none
+    
   }
 
   .kontaktundertitel {

@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="da">
+<!DOCTYPE html> <!-- Deklarerer HTML5 som dokumenttype -->
+<html lang="da"> <!-- Angiver sprog til dansk -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="designhyrup.css" />  computer css -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" /> <!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Gør siden responsiv på mobile enheder -->
+    <link rel="stylesheet" href="style.css" /><!-- linker til min CSS style.css -->
     <script
       src="https://kit.fontawesome.com/5f197fc237.js"
       crossorigin="anonymous"
     ></script>
-    <script src="dropdown.js"></script>
-    <!-- burger menu fra fontawsome-->
-    <title>forside</title>
+    <script src="dropdown.js"></script><!-- Henter JavaScript til f.eks dropdown-menu -->
+    <!-- burger menu ikon fra fontawsome-->
+    <title>forside</title> 
   </head>
   <body>
     <header>
@@ -19,19 +18,12 @@
       <!------Computer versiom------>
       <!---------------------------->
         <nav class="__menu">
-          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo" />
-          <ul class="nav__links">
-            <li>
-              <a href="index.html">
-                <h4>HJEM</h4>
-              </a>
-            </li>
-            <li>
-              <a href="Ommig.html"><h4>OM MIG</h4>
-              </a>
-              </li>
-            <li><a href="Projekter.html"><h4>PROJEKTER</h4></a></li>
-            <li><a href="Kontakt.html"><h4>KONTAKT</h4></a></li>
+          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo" /><!-- Viser det lange logo i venstre side -->
+          <ul class="nav__links"> <!-- Navigationens links -->
+            <li><a href="index.html"><h4>HJEM</h4></a></li> <!-- Link til forsiden -->
+            <li><a href="Ommig.html"><h4>OM MIG</h4></a></li> <!-- Link til "Om mig"-side -->
+            <li><a href="Projekter.html"><h4>PROJEKTER</h4></a></li> <!-- Link til projekter -->
+            <li><a href="Kontakt.html"><h4>KONTAKT</h4></a></li> <!-- Link til kontaktside -->
       </ul>
     </nav>
       <!----------------------------->
@@ -40,15 +32,14 @@
       <div class="top__bar">
         <div class="__logo">
           <!--logoet oppe i venstre hjørne-->
-          <img src="Billeder/alternativlogo.svg" alt="__logo" />
-          <!-- billedet loget-->
+          <img src="Billeder/alternativlogo.svg" alt="__logo" /> <!-- Alternativt logo til mobil -->
         </div>
         <div class="dropdown">
-          <div class="burgermenuIkon" onclick="myFunction()">
-            <i class="fa-solid fa-bars"></i>
+          <div class="burgermenuIkon" onclick="myFunction()"> <!-- Klik-ikon til dropdown-menu -->
+            <i class="fa-solid fa-bars"></i><!-- Burger-ikon fra Font Awesome -->
           </div>
-          <div id="dropdown-content" class="dropdown-content">
-            <a href="index.html" class="dropdown__link dropdown__link--valgt"><h3>HJEM</h3></a> <!--bem med modifier-->
+          <div id="dropdown-content" class="dropdown-content"> <!-- Selve dropdown-menuen -->
+            <a href="index.html" class="dropdown__link dropdown__link--valgt"><h3>HJEM</h3></a> <!-- bem = block med elements og med modifier--> <!-- Viser at brugeren er på "hjem" -->
             <a href="Ommig.html"><h3>OM MIG</h3></a>
             <a href="Projekter.html"><h3>PROJEKTER</h3></a>
             <a href="Kontakt.html"><h3>KONTAKT</h3></a>
@@ -59,28 +50,28 @@
     <main>
       <!-- sektionen/class med billedet, helt logo, tekst og knap starter-->
       <section class="__forside">
-        <div class="langt__logo">
-          <img src="Billeder/hellogo.svg" alt="hel__logo" class="hel__logo" />
+        <div class="langt__logo"> 
+          <img src="Billeder/hellogo.svg" alt="hel__logo" class="hel__logo" /><!-- viser det lange logo på forsiden i mobil version -->
         </div>
-        <div class="tekst__Forside">
-          <div class="mit__navn">
+        <div class="tekst__Forside"> <!-- samlet class for hvad er oven på billedet på forsiden -->
+          <div class="mit__navn"> <!-- mit skrevet navn-->
             <h1>
-              MIKKEL HYRUP <br class="__knak" />
+              MIKKEL HYRUP <br class="__knak" /> <!-- får "johansen" til at springe ned på ny linje -->
               JOHANSEN
             </h1>
           </div>
-          <div class="Uddannelse"><h3>Multimediedesigner</h3></div>
+          <div class="Uddannelse"><h3>Multimediedesigner</h3></div> <!-- skrevet uddannelse -->
         </div>
-        <div class="forside__knap">
+        <div class="forside__knap"> <!-- knappen "se projekter" -->
           <a href="Projekter.html">
-            <button class="knap__1 cta__knap"><h4>SE PROJEKTER</h4></button>
+            <button class="knap__1 cta__knap"><h4>SE PROJEKTER</h4></button> <!-- Knap der linker videre til projekt-side "knap1 er teksten og ctaknap er blokken " -->
           </a>
         </div>
         <!-- sektionen/class med billedet, helt logo, tekst og knap slutter-->
       </section>
 
-      <section class="grid__container"->
-        <div class="tekst__hex">
+      <section class="grid__container"> <!-- Sektion med tekst og billede af åben kasse -->
+        <div class="tekst__hex"> <!-- tekst i hexagonen -->
           <p>
             Jeg ser mit <br />kreative sind som <br />
             en kasse fyldt flere forskellige <br />
@@ -93,22 +84,22 @@
         </div>
 
         <div class="open__box">
-          <img src="Billeder/openbox1.svg" alt="open__box" />
+          <img src="Billeder/openbox1.svg" alt="open__box" /><!-- Illustration af åben kasse -->
         </div>
       </section>
     </main>
-    <footer>
+    <footer> <!-- Footer med sociale medier og copyright -->
       <div class="footer__grid">
-        <div class="__facebook">
+        <div class="footer__icon--facebook">
           <a href="https://www.facebook.com/mikkel.h.johansen.7/">
-          <img src="Billeder/faceikon.svg" alt="faceikon" /></a>
+          <img src="Billeder/faceikon.svg" alt="faceikon" /></a><!-- Facebook-ikon med link --> 
         </div>
-        <div class="__insta">
+        <div class="footer__icon--insta">
           <a  href="https://www.instagram.com/mhyrup/">
-          <img src="Billeder/instaikon.svg" alt="instaicon" /></a>
+          <img src="Billeder/instaikon.svg" alt="instaicon" /></a> <!-- Instagram-ikon med link -->
         </div>
         <div class="copy__right">
-          <small>copyright © 2025 MIKKEL HYRUP JOHANSEN</small>
+          <small>copyright © 2025 MIKKEL HYRUP JOHANSEN</small> <!-- Ophavsret -->
         </div>
       </div>
     </footer>      
