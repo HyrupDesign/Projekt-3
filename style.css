@@ -41,6 +41,7 @@ small {
 }
 
 :root {
+  /* farve variabler */
   --background1: #fdfdfa;
   --background2: #ebebe3;
   --accent: #88a998;
@@ -61,7 +62,7 @@ body {
   background-color: var(--background1); / baggrundsfarve på hele siden */
 }
 
-.topbar {
+.top__bar {
   background-color: var(--background1); /* baggrundsfarve på topbaren*/
   display: flex; /* indikere at der bruges flex-koder*/
   justify-content: space-between; /* indikere at de to ikoner skal deles op */
@@ -70,7 +71,15 @@ body {
   padding-left: 20px; /* giver luft ude til venstre i topbaren, det alternativelogo er lidt større i det transparent*/
   padding-right: 21px; /* derfor er ikonet til venstre 1px større for skabe alignment*/
 }
-.valgt {
+
+
+.dropdown__link {
+  color: var(--background2);
+  display: block;
+}
+
+/* Modifier – når linket er valgt */
+.dropdown__link--valgt {
   background-color: var(--background2);
 }
 /* dropdown menu fra w3school.com: 
@@ -131,11 +140,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 }
 /* burgermenu hentet fra fontawsome slut */
 
-.logo {
+.__logo {
   /* det alternative logo */
   width: 40px; /* størrelsen på det alternativelogo */
 }
-.forside {
+.__forside {
   background-image: url(Billeder/hulum.svg); /* Billedet under tekst, logo og knap*/
   background-color: var(
     --primary
@@ -152,33 +161,33 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   color: var(--secondary);
 }
 
-.hellogo {
+.hel__logo {
   width: 250px;
 }
 
-.tekstForside {
+.tekst__Forside {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.knap1 {
+.knap__1 {
   font-size: 1.44rem; /* 23.04px */
 }
 
-.grid-container {
+.grid__container {
   display: grid;
   grid-template-areas:
     "teksthex"
     "box";
 }
-.openbox {
+.open__box {
   grid-area: box;
   padding: 16px;
   width: 359px;
   justify-self: center;
   margin-bottom: 30px;
 }
-.teksthex {
+.tekst__hex {
   grid-area: teksthex;
   text-align: center;
   background-image: url(Billeder/Blå\ hexagon.svg);
@@ -193,7 +202,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   margin-top: 60px;
 }
 
-.footer-grid {
+.footer__grid {
   background-color: #114761;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -206,25 +215,25 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   justify-items: center;
   align-items: center;
 }
-.facebook {
+.__facebook {
   grid-area: facebook;
   width: 40px;
   padding-top: 70px;
   justify-self: right;
 }
-.insta {
+.__insta {
   grid-area: insta;
   width: 40px;
   padding-top: 70px;
   justify-self: left;
 }
 
-.copyright {
+.copy__right {
   grid-area: copyright;
   color: var(--background1);
 }
 
-.ikoner {
+.__ikoner {
   width: 26px;
   height: auto;
 }
@@ -233,32 +242,32 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 /*  Om mig start */
 /*               */
 
-.hvem {
+.__hvem {
   padding: 30px;
-  justify-self: center;
+  text-align: center;
   color: var(--primary);
 }
 
-.kaldemig {
+.kalde__mig {
   justify-self: center;
   text-align: center;
   color: var(--accent);
 }
 
-.portrat {
+.__portrat {
   justify-self: center;
   padding-top: 30px;
   width: 300px;
 }
 
-.ommig {
+.om__mig {
   width: 340px;
   padding: 20px;
   padding-bottom: 30px;
   justify-self: center;
 }
 
-.gultekst {
+.gul__tekst {
   color: var(--secondary);
 }
 
@@ -271,11 +280,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 /*             selvportræt            */
 
 /*                             */
-/*     slide show monil        */
+/*     slide show mobil        */
 /*                             */
 
 button {
-  padding: 12px 20px;
   font-size: 18px;
   cursor: pointer;
   border: none;
@@ -349,13 +357,13 @@ button {
 /*     slide show mobil slut     */
 /*                               */
 
-.projekter {
+.__projekter {
   padding: 30px;
-  justify-self: center;
+  text-align: center;
   color: var(--primary);
 }
 
-.projekttekst {
+.projekt__tekst {
   justify-self: center;
   text-align: center;
   color: var(--accent);
@@ -363,21 +371,21 @@ button {
   padding-right: 30px;
 }
 
-.projektbillede {
+.projekt__billede {
   justify-self: center;
   padding: 30px;
 }
-.projekttitel {
+.projekt__titel {
   width: 80%;
   justify-self: center;
   padding-left: 20px;
   color: var(--secondary);
 }
 
-.lyseretekst {
+.lysere__tekst {
   color: var(--background1);
 }
-.projektindhold {
+.projekt__indhold {
   width: 80%;
   padding: 20px;
   padding-bottom: 30px;
@@ -388,7 +396,7 @@ button {
 /*              ny sektion             */
 /*               Økolariet             */
 
-.oekofarve {
+.oeko__farve {
   background-color: var(--accent);
 }
 
@@ -396,11 +404,11 @@ button {
 /*              ny sektion             */
 /*            Underenhund.dk           */
 
-.ctaweb {
+.cta__web {
   justify-self: center;
 }
 
-.ctaknap {
+.cta__knap {
   background-color: var(--primary);
   padding: 26px 30px;
   font-weight: bold;
@@ -413,7 +421,7 @@ button {
   border: none;
 }
 
-.center {
+.__center {
   justify-self: center;
   padding: 20px;
 }
@@ -422,7 +430,7 @@ button {
 /*              ny sektion             */
 /*                cricut               */
 
-.cricutfarve {
+.cricut__farve {
   background-color: var(--accent);
 }
 
@@ -430,7 +438,7 @@ button {
 /*              ny sektion             */
 /*                Gyngen               */
 
-.animationfilm {
+.animation__film {
   justify-self: center;
   padding-bottom: 30px;
 }
@@ -439,7 +447,7 @@ button {
 /*              ny sektion             */
 /*              Indesign               */
 
-.fotofarve {
+.foto__farve {
   background-color: var(--accent);
 }
 
@@ -547,23 +555,23 @@ button {
   /*              */
   /*   forsiden   */
   /*   computer   */
-  .topbar {
+  .top__bar {
     display: none;
   }
 
-  .logo {
+  .__logo {
     width: 150px; /* størrelse på logoet */
   }
 
-  .hellogo {
+  .hel__logo {
     display: none;
   }
 
-  .langtlogo {
+  .langt__logo {
     display: none;
   }
 
-  .menu {
+  .__menu {
     display: flex;
     background-color: var(--background1);
     justify-content: space-between; /* Skubber indholdet til hver sin ende */
@@ -578,7 +586,7 @@ button {
     text-decoration: none; /* fjerner stregen under menu-navnene */
   }
 
-  .nav-links {
+  .nav__links {
     display: flex;
     gap: 44px; /* ifølge figma er der 44px mellem hver knap*/
     list-style: none; /* at punktopstilling ikke har punkter*/
@@ -588,27 +596,27 @@ button {
   /*---------forside--------*/
   /*------------------------*/
 
-  .grid-container {
+  .grid__container {
     grid-template-areas: "teksthex box";
   }
 
-  .tekstForside {
+  .tekst__Forside {
     grid-area: tekstForside;
     padding: 0;
     margin: 50px;
   }
 
-  .knak {
+  .__knak {
     display: none;
   }
 
-  .forsideknap {
+  .forside__knap {
     grid-area: forsideknap;
     place-self: end;
     margin: 50px;
   }
 
-  .forside {
+  .__forside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -616,16 +624,19 @@ button {
     grid-template-areas: "tekstForside ." ". forsideknap";
   }
 
-  .portrat {
+  .__portrat {
     grid-area: portrat;
-    width: 100%;
+    padding: 30px;
+    width: 70%;
   }
 
-  .ommig {
+  .om__mig {
     grid-area: ommig;
+    width: 100%
+    
   }
 
-  .ommig-grid {
+  .ommig__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px;
@@ -638,19 +649,22 @@ button {
   /*-----projekter----*/
   /*-----computer-----*/
 
-  .projektbillede {
+  .projekt__billede {
     display: none;
   }
-  .comprojektbillede {
+  .comprojekt__billede {
     grid-area: comprojektbillede;
     width: 100%;
     justify-self: stretch;
     align-self: stretch;
   }
 
+  
+
   /*                    */
   /*    slide show      */
   /*                    */
+
   button {
     cursor: pointer;
     border: none;
@@ -661,8 +675,7 @@ button {
   }
 
   .loopknap {
-    width: 100%;
-    height: auto;
+    width: 453.5px;
     object-fit: cover;
     display: block;
   }
@@ -730,31 +743,31 @@ button {
   /*   slide slutter       */
   /*                       */
 
-  .projekttitel {
+  .projekt__titel {
     width: 100%;
     padding: 0px;
   }
 
-  .projektindhold {
+  .projekt__indhold {
     width: 100%;
     padding: 0;
     padding-top: 20px;
   }
 
-  .projektBlock {
+  .projekt__Block {
     grid-area: projektBlock;
     margin: 0px;
   }
 
-  .projektEkstra {
+  .projekt__Ekstra {
     grid-area: projektEkstra;
   }
 
-  .ctaknap {
+  .cta__knap {
     grid-area: ctaknap;
   }
 
-  .projektogtekst-grid {
+  .projektogtekst__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
@@ -773,9 +786,9 @@ button {
     justify-self: center;
   }
 
-  .contact-form {
-    max-width: none;
-    width: 50%;
+  .contactform {
+    max-width: 600px;
+    width: none
   }
 
   .kontaktundertitel {
@@ -788,15 +801,21 @@ button {
 }
 
 @media (max-width: 600px) {
-  .menu {
+  .__menu {
     display: none;
   }
 
-  .comprojektbillede {
+  .comprojekt__billede {
     display: none;
   }
 
   .button {
     margin: 0;
   }
+
+  .web__billede {
+    display: none;
+  }
+
+
 }
