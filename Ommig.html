@@ -1,9 +1,9 @@
 <!DOCTYPE html> <!-- Deklarerer HTML5 som dokumenttype -->
 <html lang="da"> <!-- Angiver sprog til dansk -->
   <head>
-    <meta charset="UTF-8" /> <!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Gør siden responsiv på mobile enheder -->
-    <link rel="stylesheet" href="style.css" /><!-- linker til min CSS style.css -->
+    <meta charset="UTF-8"> <!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gør siden responsiv på mobile enheder -->
+    <link rel="stylesheet" href="style.css"><!-- linker til min CSS style.css -->
     <script
       src="https://kit.fontawesome.com/5f197fc237.js"
       crossorigin="anonymous"
@@ -14,11 +14,11 @@
   </head>
   <body>
     <header>
-      <!---------------------------->
-      <!------Computer versiom------>
-      <!---------------------------->
+      <!--                        -->
+      <!--    Computer version    -->
+      <!--                        -->
             <nav class="__menu">
-          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo" /><!-- Viser det lange logo i venstre side -->
+          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo"><!-- Viser det lange logo i venstre side -->
           <ul class="nav__links"> <!-- Navigationens links -->
             <li><a href="index.html"><h4>HJEM</h4></a></li> <!-- Link til forsiden -->
             <li><a href="Ommig.html"><h4>OM MIG</h4></a></li> <!-- Link til "Om mig"-side -->
@@ -26,13 +26,13 @@
             <li><a href="Kontakt.html"><h4>KONTAKT</h4></a></li> <!-- Link til kontaktside -->
       </ul>
     </nav>
-      <!----------------------------->
-      <!--------Mobil version-------->
-      <!----------------------------->
+      <!--                         -->
+      <!--      Mobil version      -->
+      <!--                         -->
             <div class="top__bar">
         <div class="__logo">
           <!--logoet oppe i venstre hjørne-->
-          <img src="Billeder/alternativlogo.svg" alt="__logo" />
+          <img src="Billeder/alternativlogo.svg" alt="__logo">
           <!-- billedet loget-->
         </div>
         <div class="dropdown">
@@ -54,43 +54,47 @@
       </div>
       <div class="kalde__mig">
         <h3>
-          Det kommer an på hvem du spørger <br/>de fleste vil kalde mig: Ham den
+          Det kommer an på hvem du spørger <br>de fleste vil kalde mig: Ham den
             <span class="gul__tekst">kreative.</span> 
           
         </h3></div>
-      </div>
     </main>
     <section class="ommig__grid">
+      <h2 class="skjult__overskrift">skjult overskrift</h2> <!--overskrift som w3 validator siger at den skal have--> 
         <div class="__portrat">
-      <img src="Billeder/portræt.svg" alt="__Portrat"/> </div>
+      <img src="Billeder/portræt.svg" alt="__Portrat"> </div>
 
       <div class="om__mig">
-       <p> Hej! <br/><br>Lad mig præsentere mig selv, Mit navn er Mikkel Hyrup
+       <p> Hej! <br><br>Lad mig præsentere mig selv, Mit navn er Mikkel Hyrup
         Johansen. Jeg lige nu igang med 1. semester på uddannelsen som
-        multimediedesigner og bliver færdig engang i 2027. <br /><br />
+        multimediedesigner og bliver færdig engang i 2027. <br><br>
         Jeg er født og opvokset i Odense og bor sammen med min kæreste Rasmus.
         Før jeg startede på denne uddannelse og gik på deltid, var jeg
         fuldtidsansat i Søstrene Grene gennem otte år. I Søstrene grene univers
         beskæftiget mig med alt det holder allermest af: Boligartikler og
-        kreative påfund. <br /><br />Min stærkeste kompetence er det kreative og
-        med denne uddannelse kan jeg gøre det til min levevej. <br /><br />
+        kreative påfund. <br><br>Min stærkeste kompetence er det kreative og
+        med denne uddannelse kan jeg gøre det til min levevej. <br><br>
         <strong>Mikkel Hyrup Johansen</strong></p>
       </div>
     </section>
      <footer>
       <div class="footer__grid">
-        <div class="footer__icon--facebookk">
-          <a href="https://www.facebook.com/mikkel.h.johansen.7/">
-          <img src="Billeder/faceikon.svg" alt="faceikon" /></a>
-        </div>
-        <div class="footer__icon--insta">
-          <a  href="https://www.instagram.com/mhyrup/">
-          <img src="Billeder/instaikon.svg" alt="instaicon" /></a>
-        </div>
-        <div class="copy__right">
-          <small>copyright © 2025 MIKKEL HYRUP JOHANSEN</small>
-        </div>
-      </div>
+  <div class="footer__icon--facebook">
+    <a href="https://www.facebook.com/mikkel.h.johansen.7/">
+      <img src="Billeder/faceikon.svg" alt="faceikon">
+    </a> <!-- ← korrekt lukket -->
+  </div>
+
+  <div class="footer__icon--insta">
+    <a href="https://www.instagram.com/mhyrup/">
+      <img src="Billeder/instaikon.svg" alt="instaicon">
+    </a>
+  </div>
+
+  <div class="copy__right">
+    <small>copyright © 2025 MIKKEL HYRUP JOHANSEN</small>
+  </div>
+</div>
     </footer> 
   </body>
 </html>
