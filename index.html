@@ -1,24 +1,23 @@
 <!DOCTYPE html> <!-- Deklarerer HTML5 som dokumenttype -->
 <html lang="da"> <!-- Angiver sprog til dansk -->
   <head>
-    <meta charset="UTF-8" /> <!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Gør siden responsiv på mobile enheder -->
-    <link rel="stylesheet" href="style.css" /><!-- linker til min CSS style.css -->
+    <meta charset="UTF-8"> <!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gør siden responsiv på mobile enheder -->
+    <link rel="stylesheet" href="style.css"> <!-- linker til min CSS style.css -->
     <script
       src="https://kit.fontawesome.com/5f197fc237.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="dropdown.js"></script><!-- Henter JavaScript til f.eks dropdown-menu -->
+      crossorigin="anonymous"></script>
+    <script src="dropdown.js"></script> <!-- Henter JavaScript til f.eks dropdown-menu -->
     <!-- burger menu ikon fra fontawsome-->
     <title>forside</title> 
   </head>
   <body>
     <header>
-      <!---------------------------->
-      <!------Computer versiom------>
-      <!---------------------------->
+      <!--                        -->
+      <!--    Computer version    -->
+      <!--                        -->
         <nav class="__menu">
-          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo" /><!-- Viser det lange logo i venstre side -->
+          <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo"><!-- Viser det lange logo i venstre side -->
           <ul class="nav__links"> <!-- Navigationens links -->
             <li><a href="index.html"><h4>HJEM</h4></a></li> <!-- Link til forsiden -->
             <li><a href="Ommig.html"><h4>OM MIG</h4></a></li> <!-- Link til "Om mig"-side -->
@@ -26,13 +25,13 @@
             <li><a href="Kontakt.html"><h4>KONTAKT</h4></a></li> <!-- Link til kontaktside -->
       </ul>
     </nav>
-      <!----------------------------->
-      <!--------Mobil version-------->
-      <!----------------------------->
+      <!--                         -->
+      <!--      Mobil version      -->
+      <!--                         -->
       <div class="top__bar">
         <div class="__logo">
           <!--logoet oppe i venstre hjørne-->
-          <img src="Billeder/alternativlogo.svg" alt="__logo" /> <!-- Alternativt logo til mobil -->
+          <img src="Billeder/alternativlogo.svg" alt="__logo"> <!-- Alternativt logo til mobil -->
         </div>
         <div class="dropdown">
           <div class="burgermenuIkon" onclick="myFunction()"> <!-- Klik-ikon til dropdown-menu -->
@@ -51,59 +50,62 @@
       <!-- sektionen/class med billedet, helt logo, tekst og knap starter-->
       <section class="__forside">
         <div class="langt__logo"> 
-          <img src="Billeder/hellogo.svg" alt="hel__logo" class="hel__logo" /><!-- viser det lange logo på forsiden i mobil version -->
+          <img src="Billeder/hellogo.svg" alt="hel__logo" class="hel__logo"><!-- viser det lange logo på forsiden i mobil version -->
         </div>
         <div class="tekst__Forside"> <!-- samlet class for hvad er oven på billedet på forsiden -->
           <div class="mit__navn"> <!-- mit skrevet navn-->
             <h1>
-              MIKKEL HYRUP <br class="__knak" /> <!-- får "johansen" til at springe ned på ny linje -->
+              MIKKEL HYRUP <br class="__knak"> <!-- får "johansen" til at springe ned på ny linje -->
               JOHANSEN
             </h1>
           </div>
           <div class="Uddannelse"><h3>Multimediedesigner</h3></div> <!-- skrevet uddannelse -->
         </div>
         <div class="forside__knap"> <!-- knappen "se projekter" -->
-          <a href="Projekter.html">
-            <button class="knap__1 cta__knap"><h4>SE PROJEKTER</h4></button> <!-- Knap der linker videre til projekt-side "knap1 er teksten og ctaknap er blokken " -->
-          </a>
+          <button class="cta__knap knap__1" onclick="location.href='Projekter.html'">SE PROJEKTER</button> <!-- Knap der linker videre til projekt-side "knap1 er teksten og ctaknap er blokken " -->
+          
+
+          
         </div>
         <!-- sektionen/class med billedet, helt logo, tekst og knap slutter-->
       </section>
 
-      <section class="grid__container"> <!-- Sektion med tekst og billede af åben kasse -->
-        <div class="tekst__hex"> <!-- tekst i hexagonen -->
-          <p>
-            Jeg ser mit <br />kreative sind som <br />
-            en kasse fyldt flere forskellige <br />
-            digitale og kreative færdigheder. <br /><br />Kassen har således
-            flere sider <br />
-            og tilgange til at bidrage til god <br />visuel kommunikation og
-            <br />
-            digitalt indhold.
-          </p>
-        </div>
+      <section><!-- Sektion med tekst og billede af åben kasse -->
+        <h2 class="skjult__overskrift">skjult overskrift</h2> <!--overskrift som w3 validator siger at den skal have--> 
+        <div class="grid__container"> <!-- den behøver ikke overskrift -->
+          <div class="tekst__hex">
+            <p>
+              Jeg ser mit <br>kreative sind som <br>
+              en kasse fyldt flere forskellige <br>
+              digitale og kreative færdigheder. <br><br>
+              
+              Kassen har således flere sider <br>
+              og tilgange til at bidrage til god<br>
+              visuel kommunikation og<br>
+              digitalt indhold.
+            </p>
+          </div>
 
-        <div class="open__box">
-          <img src="Billeder/openbox1.svg" alt="open__box" /><!-- Illustration af åben kasse -->
-        </div>
+  <div class="open__box">
+    <img src="Billeder/openbox1.svg" alt="open__box">
+  </div>
+</div>
       </section>
     </main>
     <footer> <!-- Footer med sociale medier og copyright -->
       <div class="footer__grid">
         <div class="footer__icon--facebook">
           <a href="https://www.facebook.com/mikkel.h.johansen.7/">
-          <img src="Billeder/faceikon.svg" alt="faceikon" /></a><!-- Facebook-ikon med link --> 
+          <img src="Billeder/faceikon.svg" alt="faceikon"></a><!-- Facebook-ikon med link --> 
         </div>
         <div class="footer__icon--insta">
           <a  href="https://www.instagram.com/mhyrup/">
-          <img src="Billeder/instaikon.svg" alt="instaicon" /></a> <!-- Instagram-ikon med link -->
+          <img src="Billeder/instaikon.svg" alt="instaicon"></a> <!-- Instagram-ikon med link -->
         </div>
         <div class="copy__right">
           <small>copyright © 2025 MIKKEL HYRUP JOHANSEN</small> <!-- Ophavsret -->
         </div>
       </div>
     </footer>      
-    </div>
-  </div> 
   </body>
 </html>
