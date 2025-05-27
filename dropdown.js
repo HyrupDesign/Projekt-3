@@ -1,3 +1,7 @@
+/*                    */
+/*    dropdown menu    */  
+/*                    */
+
 function myFunction() {
   var content = document.getElementById("dropdown-content");
 
