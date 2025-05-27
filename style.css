@@ -422,6 +422,7 @@ button {
   /* centrerer bokse horisontalt */
   text-align: left;
   /* venstrejusterer tekst */
+  align-content: center;
 }
 
 .projektogtekst__grid>* {
@@ -878,6 +879,7 @@ video {
       "projektBlock comprojektbillede"
       "projektEkstra comprojektbillede";
     padding: 30px;
+   
   }
   /*------------------------*/
   /*--- kontakt formular----*/
