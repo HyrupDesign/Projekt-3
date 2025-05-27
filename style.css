@@ -536,6 +536,10 @@ button {
   padding-bottom: 30px;
 }
 
+video {
+  width: 100%;
+}
+
 /*                                     */
 /*              ny sektion             */
 /*              Indesign               */
