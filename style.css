@@ -258,6 +258,34 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
 /*  Om mig start */
 /*               */
 
+
+ .ommig__grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas:
+     "portrat"
+     "ommig";
+   gap: 20px;
+   padding: 20px;
+   place-items: center;
+   /* centrerer boksene horisontalt */
+   text-align: left;
+   /* venstrejusterer tekst */
+ }
+
+ .__portrat {
+   grid-area: portrat;
+   width: 100%;
+   max-width: 600px;
+ }
+
+ .om__mig {
+   grid-area: ommig;
+   width: 100%;
+   max-width: 600px;
+ }
+ 
+
 .__hvem {
   padding: 30px;
   text-align: center;
@@ -287,6 +315,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
   color: var(--secondary);
 }
 
+.hvid__tekst {
+  color: var(--background1)
+}
+
 /*              */
 /*  om mig slut */
 /*              */
@@ -307,7 +339,11 @@ button {
 }
 
 .loopknap {
-  width: 100%;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
 }
 
 .popup {
@@ -372,6 +408,41 @@ button {
 /*                               */
 /*     slide show mobil slut     */
 /*                               */
+
+.projektogtekst__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "projektBlock"
+    "projektEkstra"
+    "comprojektbillede ";
+  padding: 20px;
+  place-items: center;
+  /* centrerer bokse horisontalt */
+  text-align: left;
+  /* venstrejusterer tekst */
+}
+
+.projektogtekst__grid>* {
+  max-width: 600px;
+}
+
+.projektBlock {
+  grid-area: projektBlock;
+}
+
+.projektEkstra {
+  grid-area: projektEkstra;
+}
+
+
+
+.projektogtekst__grid img {
+  width: 100%;
+  height: auto;
+}
+
 
 .__projekter {
   padding: 30px;
@@ -696,15 +767,13 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    /* height: auto;
-    object-fit: cover;
-    display: block; */
+    width: 100%;
+   
   }
 
   .loopknap {
-    width: 453.5px;
-    object-fit: cover;
-    display: block;
+    width: 100%;
+    
   }
 
   .popup {
