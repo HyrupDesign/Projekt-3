@@ -425,11 +425,17 @@ button {
 }
 
 .cta__knap {
-  background-color: var(--primary);
+  display: inline-block;
   padding: 26px 30px;
-  font-weight: bold;
+  background-color: var(--primary);
   color: var(--background1);
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
   border: none;
+  text-align: center;
+  
 }
 
 .cta__knap:hover {
