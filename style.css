@@ -277,8 +277,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
    /* centrerer boksene horisontalt */
    text-align: left;
    /* venstrejusterer tekst */
+   
  }
-/* navnet på billedet til griden  */
+
+ /* navnet på billedet til griden  */
  .__portrat {
    grid-area: portrat;
    width: 100%;
@@ -288,7 +290,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*
  .om__mig {
    grid-area: ommig;
    width: 100%;
-   max-width: 600px;
+   
  }
  
 /* overskrift i ommig  */
@@ -444,8 +446,9 @@ button {
   text-align: left;
   /* venstrejuster tekst inde i boksene */
   max-width: 700px;
-  /* så de ikke fylder hele bredden */
-  width: 100%; /* gør det skalerbart*/
+  /* begræns bredden på tekstboksen */
+  margin: 0 auto;
+    /* centrerer tekstboksen i viewporten */
 }
 /* hele griden*/
 .projektogtekst__grid>* {
@@ -453,17 +456,20 @@ button {
 }
 
 /* griden for projekt teksten */
-.projektBlock {
+.projekt__Block {
   grid-area: projektBlock;
+  align-items: center;
 }
 /* navnet på den grid med en knap i */
-.projektEkstra {
+.projekt__Ekstra {
   grid-area: projektEkstra;
+  align-items: center;
 }
 /* projekt billedernes fælles tag*/
 .projekt__billede{
   grid-area: projektbillede;
   justify-self: center;
+  padding: 30px;
 }
 
 
@@ -473,13 +479,13 @@ button {
   height: auto;
 }
 
-
+/* overskriften på projekt siden  */
 .__projekter {
   padding: 30px;
   text-align: center;
   color: var(--primary);
 }
-
+/* underoverskrift  */
 .projekt__tekst {
   justify-self: center;
   text-align: center;
@@ -487,21 +493,18 @@ button {
   padding-left: 30px;
   padding-right: 30px;
 }
-
-.projekt__billede {
-  justify-self: center;
-  padding: 30px;
-}
+/* underoverskriften på brødteksten */
 .projekt__titel {
   width: 80%;
   justify-self: center;
   padding-left: 20px;
   color: var(--secondary);
 }
-
+/* de overskrifter der skrevet inden i de grønne sektioner */
 .lysere__tekst {
   color: var(--background1);
 }
+/* selve projekt teksten */
 .projekt__indhold {
   width: 80%;
   padding: 20px;
@@ -512,7 +515,7 @@ button {
 /*                                     */
 /*              ny sektion             */
 /*               Økolariet             */
-
+/* farvebaggrund på sektionen */
 .oeko__farve {
   background-color: var(--accent);
 }
@@ -521,10 +524,11 @@ button {
 /*              ny sektion             */
 /*            Underenhund.dk           */
 
+/* teksten med "hvis du vil se mere af mere:" */
 .cta__web {
   justify-self: center;
 }
-
+/* skriften i knappen med teksten "tryk her" */
 .cta__knap {
   display: inline-block;
   padding: 26px 30px;
@@ -538,12 +542,12 @@ button {
   text-align: center;
   
 }
-
+/* gør at knappen skifter farve når man hover */
 .cta__knap:hover {
   background-color: var(--secondary);
   border: none;
 }
-
+/* gør at knappen bliver centreret */
 .__center {
   justify-self: center;
   padding: 20px;
@@ -553,6 +557,7 @@ button {
 /*              ny sektion             */
 /*                cricut               */
 
+/* baggrundsfarve på sektionen */
 .cricut__farve {
   background-color: var(--accent);
 }
@@ -561,11 +566,12 @@ button {
 /*              ny sektion             */
 /*                Gyngen               */
 
+/* placering af videoen  */
 .animation__film {
   justify-self: center;
   padding-bottom: 30px;
 }
-
+/* størrelsen på videoen */
 video {
   width: 100%;
 }
@@ -574,6 +580,7 @@ video {
 /*              ny sektion             */
 /*              Indesign               */
 
+/* baggrundsfarven på sektionen */
 .foto__farve {
   background-color: var(--accent);
 }
@@ -691,7 +698,7 @@ video {
   .langt__logo {
     display: none;
   }
-
+/* computer versionen har en menu lavet med flex */
   .__menu {
     display: flex;
     background-color: var(--background1);
@@ -701,12 +708,12 @@ video {
     font-family: poppins, sans-serif;
     margin: 0;
   }
-
+/* ændre designet på på de klik bare menu titler */
   a {
     color: var(--accent); /* farve på de linkede menu knapper */
     text-decoration: none; /* fjerner stregen under menu-navnene */
   }
-
+/* ændre designet i flexen visuelt */
   .nav__links {
     display: flex;
     gap: 44px; /* ifølge figma er der 44px mellem hver knap*/
@@ -717,10 +724,11 @@ video {
   /*---------forside--------*/
   /*------------------------*/
 
+  /* overskrift på grid containeren på forsiden */
   .grid__container {
     grid-template-areas: "teksthex box";
   }
-
+/* teksten med mit navn og uddannelse */
   .tekst__Forside {
     grid-area: tekstForside;
     padding: 0;
@@ -730,17 +738,18 @@ video {
   .__knak {
     display: none;
   }
-
+/* knappen "se projekter" på forsiden  */
   .forside__knap {
     grid-area: forsideknap;
     place-self: end;
     margin: 50px;
   }
 
+  /* gør at knappen skifter farve når man hover */
   .forside__knap:hover{
     background-color: var(--secondary);
   }
-
+/* sektionen/class med billedet, helt logo, tekst og knap */
   .__forside {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -748,19 +757,19 @@ video {
     height: 700px;
     grid-template-areas: "tekstForside ." ". forsideknap";
   }
-
+/* billedet af mig */
   .__portrat {
     grid-area: portrat;
     padding: 30px;
     width: 70%;
   }
-
+/* teksten med beskrivelsen af mig */
   .om__mig {
     grid-area: ommig;
     width: 100%
     
   }
-
+/* griden i om mig */
   .ommig__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -773,10 +782,11 @@ video {
   /*------------------*/
   /*-----projekter----*/
   /*-----computer-----*/
-
+/* dette skjuler projektbilledet fra mobil versionen */
   .projekt__billede {
     display: none;
   }
+  /* computer projektbilledet til desktop version */
   .comprojekt__billede {
     grid-area: comprojektbillede;
     width: 100%;
@@ -866,32 +876,34 @@ video {
   /*                       */
   /*   slide slutter       */
   /*                       */
-
+/* under overskrift til brødteksten i projekter  */
   .projekt__titel {
     width: 100%;
     padding: 0px;
   }
-
+/* brødteksten i projekterne */
   .projekt__indhold {
     width: 100%;
     padding: 0;
     padding-top: 20px;
   }
-
+/* navn på rubrikken i griden med indhold til projektet */
   .projekt__Block {
     grid-area: projektBlock;
     margin: 0px;
-    padding: 30px
+    padding: 30px;
+    
   }
-
+/* navn på rubrikken med en knap i  */
   .projekt__Ekstra {
     grid-area: projektEkstra;
+    align-items: center;
   }
-
+/* knappen med teksten "tryk her" */
   .cta__knap {
     grid-area: ctaknap;
   }
-
+/* griden for det hele i hver projekt sektion */
   .projektogtekst__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -928,10 +940,11 @@ video {
 
 /* elementer fra computer versionen  der skal skjules i når der skaleres ned til mobil versionen, heriblandt flex menuen */
 @media (max-width: 600px) {
+  /* flex menuen fra desktip versionen */
   .__menu {
     display: none;
   }
-
+/* projekt billedet fra dekstop versionen bliver skjult fra mobil versionen */
   .comprojekt__billede {
     display: none;
   }
