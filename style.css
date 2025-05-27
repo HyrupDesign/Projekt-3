@@ -416,13 +416,20 @@ button {
   grid-template-areas:
     "projektBlock"
     "projektEkstra"
-    "comprojektbillede ";
+    "comprojektbillede";
   padding: 20px;
   place-items: center;
-  /* centrerer bokse horisontalt */
+  /* centrerer boksene i midten */
+}
+
+.projekt__Block,
+.projekt__Ekstra,
+.comprojekt__billede {
   text-align: left;
-  /* venstrejusterer tekst */
-  align-content: center;
+  /* venstrejuster tekst inde i boksene */
+  max-width: 700px;
+  /* så de ikke fylder hele bredden */
+  width: 100%;
 }
 
 .projektogtekst__grid>* {
