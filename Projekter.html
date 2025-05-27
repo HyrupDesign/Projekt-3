@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<!-- Deklarerer HTML5 som dokumenttype -->
-<html lang="da">
-  <!-- Angiver sprog til dansk -->
+<!DOCTYPE html><!-- Deklarerer HTML5 som dokumenttype -->
+<html lang="da"><!-- Angiver sprog til dansk -->
   <head>
-    <meta charset="UTF-8" />
-    <!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Gør siden responsiv på mobile enheder -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"><!-- Tegnsæt til f.eks at kunne bruge æ,ø og å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Gør siden responsiv på mobile enheder -->
+    
+    <link rel="stylesheet" href="style.css">
     <!-- linker til min CSS style.css -->
-    <script
-      src="https://kit.fontawesome.com/5f197fc237.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/5f197fc237.js" crossorigin="anonymous"></script>
+    
     <script src="dropdown.js"></script>
     <!-- burger menu ikon fra fontawsome-->
     <title>Projekter</title>
@@ -23,11 +18,7 @@
       <!--    Computer version    -->
       <!--                        -->
       <nav class="__menu">
-        <img
-          src="Billeder/hellogo.svg"
-          alt="__Logo"
-          class="__logo"
-        /><!-- Viser det lange logo i venstre side -->
+        <img src="Billeder/hellogo.svg" alt="__Logo" class="__logo"> <!-- Viser det lange logo i venstre side -->
         <ul class="nav__links">
           <!-- Navigationens links -->
           <li>
@@ -54,24 +45,20 @@
       <div class="top__bar">
         <div class="__logo">
           <!--logoet oppe i venstre hjørne-->
-          <img src="Billeder/alternativlogo.svg" alt="__logo" />
+          <img src="Billeder/alternativlogo.svg" alt="__logo">
           <!-- Alternativt logo til mobil -->
         </div>
         <div class="dropdown">
           <div class="burgermenuIkon" onclick="myFunction()">
             <!-- Klik-ikon til dropdown-menu -->
-            <i class="fa-solid fa-bars"></i
-            ><!-- Burger-ikon fra Font Awesome -->
+            <i class="fa-solid fa-bars"></i>
+            <!-- Burger-ikon fra Font Awesome -->
           </div>
           <div id="dropdown-content" class="dropdown-content">
             <!-- Selve dropdown-menuen -->
             <a href="index.html"><h3>HJEM</h3></a>
             <a href="Ommig.html"><h3>OM MIG</h3></a>
-            <a
-              href="Projekter.html"
-              class="dropdown__link dropdown__link--valgt"
-              ><h3>PROJEKTER</h3></a
-            >
+            <a href="Projekter.html" class="dropdown__link dropdown__link--valgt"><h3>PROJEKTER</h3></a>
             <!-- bem = block med elements og med modifier-->
             <!-- Viser at brugeren er på "hjem" -->
             <a href="Kontakt.html"><h3>KONTAKT</h3></a>
@@ -85,7 +72,7 @@
       </div>
       <div class="projekt__tekst">
         <h3>
-          Her er de forskellige projekter jeg har lavet<br />
+          Her er de forskellige projekter jeg har lavet<br>
           gennem uddannelsen og i fritiden.
         </h3>
       </div>
@@ -96,79 +83,37 @@
         <div class="selv__portraat comprojekt__billede">
           <!--       billede slide 1       -->
           <button onclick="openSlideshow('slideshow1')">
-            <img
-              src="Desktopbilleder/selvportrætDhover.svg"
-              alt="Åbn slideshow 1"
-              class="loopknap"
-            />
+            <img src="Desktopbilleder/selvportrætDhover.svg" alt="Åbn slideshow 1" class="loopknap">
             <!--galleri billede-->
           </button>
           <div id="slideshow1" class="popup">
-            <span class="close" onclick="closeSlideshow('slideshow1')"
-              >&times;</span
-            >
+            <span class="close" onclick="closeSlideshow('slideshow1')">&times;</span>
             <div class="slideshow-container">
-              <img
-                class="slide"
-                src="slideshowbilleder/IMG_1082.JPG"
-                alt="Slide 1"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/selvportræt.png"
-                alt="Slide 2"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/MitSelvportræt.png"
-                alt="Slide 3"
-              />
-
-              <a class="prev" onclick="changeSlide(-1, 'slideshow4')"
-                >&#10094;</a
-              >
-              <a class="next" onclick="changeSlide(1, 'slideshow4')"
-                >&#10095;</a
-              >
+              <img class="slide" src="slideshowbilleder/IMG_1082.JPG" alt="Slide 1">
+              <img class="slide" src="slideshowbilleder/selvportræt.png" alt="Slide 2">
+              <img class="slide" src="slideshowbilleder/MitSelvportræt.png" alt="Slide 3">
+              <a class="prev" onclick="changeSlide(-1, 'slideshow4')">&#10094;</a>
+              <a class="next" onclick="changeSlide(1, 'slideshow4')">&#10095;</a>
+                
+              
             </div>
           </div>
         </div>
         <!--projektbilledet til mobil-->
         <div class="selvportrat__billede projekt__billede">
           <button onclick="openSlideshow('slideshow4')">
-            <img
-              src="Iphonebilleder/selvportrætI.svg"
-              alt="Åbn slideshow 4"
-              class="loopknap"
-              width="327"
-            />
+            <img src="Iphonebilleder/selvportrætI.svg" alt="Åbn slideshow 4" class="loopknap" width="327">
           </button>
           <div id="slideshow4" class="popup">
-            <span class="close" onclick="closeSlideshow('slideshow4')"
-              >&times;</span
-            >
+            <span class="close" onclick="closeSlideshow('slideshow4')">&times;</span>
             <div class="slideshow-container">
-              <img
-                class="slide"
-                src="slideshowbilleder/IMG_1082.JPG"
-                alt="Slide 1"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/selvportræt.png"
-                alt="Slide 2"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/MitSelvportræt.png"
-                alt="Slide 3"
-              />
-              <a class="prev" onclick="changeSlide(-1, 'slideshow4')"
-                >&#10094;</a
-              >
-              <a class="next" onclick="changeSlide(1, 'slideshow4')"
-                >&#10095;</a
-              >
+              <img class="slide" src="slideshowbilleder/IMG_1082.JPG" alt="Slide 1">
+              <img class="slide" src="slideshowbilleder/selvportræt.png" alt="Slide 2">
+              <img class="slide" src="slideshowbilleder/MitSelvportræt.png" alt="Slide 3">
+              <a class="prev" onclick="changeSlide(-1, 'slideshow4')">&#10094;</a>
+              <a class="next" onclick="changeSlide(1, 'slideshow4')">&#10095;</a>
+                
+              
             </div>
           </div>
         </div>
@@ -187,7 +132,7 @@
               genkendelighed med forskellige farvekombinationer af skygger. Da
               det kom til øjenbryn, vipper og læber var jeg ekstra varsom med
               mængden af kontur, da for stor mængde ville give for kvindelige
-              træk. <br /><br />Jeg er ikke van gogh, men jeg har har formået at
+              træk. <br><br>Jeg er ikke van gogh, men jeg har har formået at
               skabe lighed og måske tildels, en lidt yngre udgave af mig selv.
             </p>
           </div>
@@ -201,78 +146,34 @@
         <div class="oekoo__billede comprojekt__billede">
           <!-- billede slide 2 -->
           <button onclick="openSlideshow('slideshow2')">
-            <img
-              src="Desktopbilleder/økolarietDhover.svg"
-              alt="Åbn slideshow 2"
-              class="loopknap"
-            />
+            <img src="Desktopbilleder/økolarietDhover.svg" alt="Åbn slideshow 2" class="loopknap">
             <!--galleri billede 2-->
           </button>
           <div id="slideshow2" class="popup">
-            <span class="close" onclick="closeSlideshow('slideshow2')"
-              >&times;</span
-            >
+            <span class="close" onclick="closeSlideshow('slideshow2')">&times;</span>
             <div class="slideshow-container">
-              <img
-                class="slide"
-                src="slideshowbilleder/plakat3-kopi.png"
-                alt="Slide 1"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/ifjdsoijf2-kopi.png"
-                alt="Slide 2"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/Spil_steps-kopi.png"
-                alt="Slide 3"
-              />
-
-              <a class="prev" onclick="changeSlide(-2, 'slideshow2')"
-                >&#10094;</a
-              >
-              <a class="next" onclick="changeSlide(1, 'slideshow2')"
-                >&#10095;</a
-              >
+              <img class="slide" src="slideshowbilleder/plakat3-kopi.png" alt="Slide 1">
+              <img class="slide" src="slideshowbilleder/ifjdsoijf2-kopi.png" alt="Slide 2">
+              <img class="slide" src="slideshowbilleder/Spil_steps-kopi.png" alt="Slide 3">
+              <a class="prev" onclick="changeSlide(-2, 'slideshow2')">&#10094;</a>
+              <a class="next" onclick="changeSlide(1, 'slideshow2')">&#10095;</a>  
             </div>
           </div>
         </div>
         <!--projektbilledet til mobil-->
         <div class="Oeko__billede projekt__billede">
           <button onclick="openSlideshow('slideshow5')">
-            <img
-              src="Iphonebilleder/ØkolarietI.svg"
-              alt="Åbn slideshow 5"
-              class="loopknap"
-            />
+            <img src="Iphonebilleder/ØkolarietI.svg" alt="Åbn slideshow 5" class="loopknap">
           </button>
           <div id="slideshow5" class="popup">
-            <span class="close" onclick="closeSlideshow('slideshow5')"
-              >&times;</span
-            >
+            <span class="close" onclick="closeSlideshow('slideshow5')">&times;</span>
             <div class="slideshow-container">
-              <img
-                class="slide"
-                src="slideshowbilleder/plakat3-kopi.png"
-                alt="Slide 1"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/ifjdsoijf2-kopi.png"
-                alt="Slide 2"
-              />
-              <img
-                class="slide"
-                src="slideshowbilleder/Spil_steps-kopi.png"
-                alt="Slide 3"
-              />
-              <a class="prev" onclick="changeSlide(-1, 'slideshow5')"
-                >&#10094;</a
-              >
-              <a class="next" onclick="changeSlide(1, 'slideshow5')"
-                >&#10095;</a
-              >
+              <img class="slide" src="slideshowbilleder/plakat3-kopi.png" alt="Slide 1">
+              <img class="slide" src="slideshowbilleder/ifjdsoijf2-kopi.png" alt="Slide 2">
+              <img class="slide" src="slideshowbilleder/Spil_steps-kopi.png" alt="Slide 3">
+              <a class="prev" onclick="changeSlide(-1, 'slideshow5')">&#10094;</a>
+              <a class="next" onclick="changeSlide(1, 'slideshow5')">&#10095;</a>
+                
             </div>
           </div>
         </div>
@@ -286,17 +187,17 @@
               at lave en installation til økolariet, som indebar en formidling
               af den grønne trepartsaftale. Den grønne trepartsaftale er et
               tungt emne, særligt for børn som er den primære målgruppe for
-              økolariet. <br /><br />
+              økolariet. <br><br>
 
               Her blev derfor udviklet i et interaktivt spil som kunne formidle
-              det tunge stof igennem Gamifikation. <br /><br />
+              det tunge stof igennem Gamifikation. <br><br>
 
               Spillet gik således ud på at plante flest træer på ét minut ved at
               barnet skulle slå på huller på gulv og vægge, lyst op af en
               projektor - som gjorde at et træ voksede op. Detagelsen udløste
               således også en belønning i form af en frø pose, som barnet kunne
               tage med hjem for skabe rigtig biodiversitet derhjemme selv samt
-              vidrebringe budskabet. <br /><br />
+              vidrebringe budskabet. <br><br>
 
               I den kreative proces stod jeg for at skabe illustrationen af
               spillet, llustrationer af interaktioner i spillet samt skabe en
@@ -310,20 +211,16 @@
       <!--projektbilledet til computer-->
       <div class="projektogtekst__grid">
         <div class="web__billede comp__rojektbillede">
-          <img src="Desktopbilleder/webdesignD.svg" alt="web__billede" />
+          <img src="Desktopbilleder/webdesignD.svg" alt="web__billede">
         </div>
         <!--projektbilledet til mobil-->
         <div class="webdesign__billede projekt__billede">
-          <img
-            src="Iphonebilleder/webdesignI.svg"
-            alt="web__desiign"
-            width="327"
-          />
+          <img src="Iphonebilleder/webdesignI.svg" alt="web__desiign" width="327">
         </div>
         <div class="projekt__Block">
           <div class="figma projekt__titel">
             <h4>
-              Webdesign/UI<br />
+              Webdesign/UI<br>
               - re-design af hjemmeside: "underenhund.dk"
             </h4>
           </div>
@@ -332,19 +229,19 @@
               I dette projekt skulle jeg mit team finde en hjemmeside som havde
               brug for en kærlig hånd til både det visuelle og til
               brugervenligheden. I den proces fandt vi underenhund.dk som sælger
-              antikviteter og kuriositeter. <br /><br />
+              antikviteter og kuriositeter. <br><br>
               I første omgang analyserede vi selv hvilke faktorer der sprang os
               selv mest øjenene og udarbejde herefter en brugertest baseret på
               virksomhedens primære målgruppe. Undervejs analyserede vi også
               hvilke trends der var i forhold til valg af farver og opsætning.
-              <br /><br />
+              <br><br>
               Gennem brugertestene kunne vi få en mere objektiv og kvantetativ
               analyse af brugervenligheden på hjemmesiden. Brugertestene bragte
               informationer som vi kunne tage med videre i design processen med
               valg af farver, skrifttyper og hvilke faktorer der skulle arbejdes
-              med for styrke brugervenligheden. <br /><br />
+              med for styrke brugervenligheden. <br><br>
               Da vi havde skabt et nyt design, lavede vi endnu en brugertest for
-              at opnå det bedste resultat. <br /><br />
+              at opnå det bedste resultat. <br><br>
               I den kreative proces stod jeg for at skabe illustrationer til
               sloganet i Adobe illustrator samt design af opsætningenen af
               prototypen i figma.
@@ -357,9 +254,7 @@
             <h4>Hvis du vil se mere af projektet:</h4>
           </div>
           <div class="__center">
-            <a href="https://www.figma.com/proto/..." class="cta__knap"
-              >TRYK HER</a
-            >
+            <a href="https://www.figma.com/proto/..." class="cta__knap">TRYK HER</a>
           </div>
         </div>
       </div>
@@ -368,82 +263,47 @@
       <!--projektbilledet til computer-->
       <div class="projektogtekst__grid">
         <div class="criicut__billede comprojekt__billede">
-          <!-- <img src="Desktop billeder/PaperartD.svg" alt="criicutbillede">  -->
           <!-- slide show 3-->
           <button onclick="openSlideshow('slideshow3')">
-            <img
-              src="Desktopbilleder/paperartDhover.svg"
-              alt="Åbn slideshow 3"
-              class="loopknap"
-            />
+            <img src="Desktopbilleder/paperartDhover.svg" alt="Åbn slideshow 3" class="loopknap">
           </button>
           <div id="slideshow3" class="popup">
-            <span class="close" onclick="closeSlideshow('slideshow3')"
-              >&times;</span
-            >
+            <span class="close" onclick="closeSlideshow('slideshow3')">&times;</span>
             <div class="slideshow-container">
-              <img
-                class="slide"
-                src="slideshowbilleder/GITTEOGHANS.svg"
-                alt="Slide 1"
-              />
-              <img class="slide" src="slideshowbilleder/2.svg" alt="Slide 2" />
-              <img
-                class="slide"
-                src="slideshowbilleder/3png.png"
-                alt="Slide 3"
-              />
-              <img class="slide" src="slideshowbilleder/4.png" alt="Slide 4" />
-              <img class="slide" src="slideshowbilleder/5.png" alt="Slide 5" />
-              <a class="prev" onclick="changeSlide(-1, 'slideshow3')"
-                >&#10094;</a
-              >
-              <a class="next" onclick="changeSlide(1, 'slideshow3')"
-                >&#10095;</a
-              >
+              <img class="slide" src="slideshowbilleder/GITTEOGHANS.svg" alt="Slide 1">
+              <img class="slide" src="slideshowbilleder/2.svg" alt="Slide 2">
+              <img class="slide" src="slideshowbilleder/3png.png" alt="Slide 3">
+              <img class="slide" src="slideshowbilleder/4.png" alt="Slide 4">
+              <img class="slide" src="slideshowbilleder/5.png" alt="Slide 5">
+              <a class="prev" onclick="changeSlide(-1, 'slideshow3')">&#10094;</a>
+              <a class="next" onclick="changeSlide(1, 'slideshow3')">&#10095;</a>
+                
+              
             </div>
           </div>
         </div>
         <!--projektbilledet til mobil-->
         <div class="cricut__billede projekt__billede">
           <button onclick="openSlideshow('slideshow6')">
-            <img
-              src="Iphonebilleder/paperartI.svg"
-              alt="Åbn slideshow 6"
-              class="loopknap"
-            />
+            <img src="Iphonebilleder/paperartI.svg" alt="Åbn slideshow 6" class="loopknap" >
           </button>
           <div id="slideshow6" class="popup">
-            <span class="close" onclick="closeSlideshow('slideshow6')"
-              >&times;</span
-            >
+            <span class="close" onclick="closeSlideshow('slideshow6')">&times;</span>
             <div class="slideshow-container">
-              <img
-                class="slide"
-                src="slideshowbilleder/GITTEOGHANS.svg"
-                alt="Slide 1"
-              />
-              <img class="slide" src="slideshowbilleder/2.svg" alt="Slide 2" />
-              <img
-                class="slide"
-                src="slideshowbilleder/3png.png"
-                alt="Slide 3"
-              />
-              <img class="slide" src="slideshowbilleder/4.png" alt="Slide 4" />
-              <img class="slide" src="slideshowbilleder/5.png" alt="Slide 5" />
-              <a class="prev" onclick="changeSlide(-1, 'slideshow6')"
-                >&#10094;</a
-              >
-              <a class="next" onclick="changeSlide(1, 'slideshow6')"
-                >&#10095;</a
-              >
+              <img class="slide" src="slideshowbilleder/GITTEOGHANS.svg" alt="Slide 1">
+              <img class="slide" src="slideshowbilleder/2.svg" alt="Slide 2">
+              <img class="slide" src="slideshowbilleder/3png.png" alt="Slide 3">
+              <img class="slide" src="slideshowbilleder/4.png" alt="Slide 4">
+              <img class="slide" src="slideshowbilleder/5.png" alt="Slide 5">
+              <a class="prev" onclick="changeSlide(-1, 'slideshow6')">&#10094;</a>
+              <a class="next" onclick="changeSlide(1, 'slideshow6')">&#10095;</a>
             </div>
           </div>
         </div>
         <div class="projekt__Block">
           <div class="__cricut projekt__titel lysere__tekst">
             <h4>
-              Paper art: <br />Afskedskort til Søstrene Grenes ejere i Odense
+              Paper art: <br>Afskedskort til Søstrene Grenes ejere i Odense
             </h4>
           </div>
           <div class="cricut__tekst projekt__indhold">
@@ -451,15 +311,15 @@
               d. 15 februar 2025 blev jeg spurgt af en kollega i søstrene grene
               om jeg ikke ville lave et afskedskort i A5 format i anledningen af
               at ejerne af Søstrene Grene butikkerne i odense, gik på pension.
-              <br />
-              <br />
+              <br>
+              <br>
               Jeg havde tidligere lavet andre kort som formidlede højtider og
-              begivenheder så det var ikke en fremmed opgave for mig. <br />
-              <br />
+              begivenheder så det var ikke en fremmed opgave for mig. <br>
+              <br>
               Første del i design processen var at samle informationer og
               skildringer, samt lave skitser af boliginteriørprodukter og finde
-              gængse farvekombinationer. <br />
-              <br />
+              gængse farvekombinationer. <br>
+              <br>
               Dertil blev der også lavet et håndskrevet kort om deres lederskab
               og deres rejse som selvstændige og igennem 32 år. Hele kortet er
               skåret ud på en "Cricut Maker"-maskime som har skåret ud efter mit
@@ -475,15 +335,11 @@
       <!--projektbilledet til computer-->
       <div class="projektogtekst__grid">
         <div class="anima__billede comprojekt__billede">
-          <img src="Desktopbilleder/MovingartD.svg" alt="anima__billede" />
+          <img src="Desktopbilleder/MovingartD.svg" alt="anima__billede">
         </div>
         <!--projektbilledet til mobil-->
         <div class="animation__billede projekt__billede">
-          <img
-            src="Iphonebilleder/movingartI.svg"
-            alt="animation"
-            width="327"
-          />
+          <img src="Iphonebilleder/movingartI.svg" alt="animation" width="327">
         </div>
         <div class="projekt__Block">
           <div class="movingart projekt__titel">
@@ -492,17 +348,17 @@
           <div class="movingart__tekst projekt__indhold">
             <p>
               I dette projekt skulle jeg finde et maleri og vække det til live,
-              med brug af Adobe photoshop og After effects. <br />
-              <br />
+              med brug af Adobe photoshop og After effects. <br>
+              <br>
               Kunstneren bag "Gyngen" eller "the swing" var Jean-Honoré
               Fragonard og historien bag maleriet var at, en herre fra hoffet
               bad Fragonard om at male et maleri af hans elskerinde siddende på
               en gynge, da han i hemmelighed beundrede hende nedfra, da hun sad
-              højere oppe i den sociale status. <br /><br />
+              højere oppe i den sociale status. <br><br>
               I Min historie har jeg taget udgangspunkt i tidsperioden hvor
               kvinder kun havde én chance i livet - hvis de havde en ægtemand og
               kun kunne komme frem i livet på ægtemandens privileger.
-              <br /><br />
+              <br><br>
               Jeg ønskede derfor for hende at hun brød ud af normerne, sked på
               privilegierne og blev sin egen, sagde farvel til hvad der
               samfundsmæssigt definerede hende, så hun kunne tage sin gynge og
@@ -514,7 +370,7 @@
         <div class="projekt__Ekstra">
           <div class="animation__film">
             <video controls width="400">
-              <source src="Billeder/juliig-kopi.mp4" type="video/mp4" />
+              <source src="Billeder/juliig-kopi.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -525,18 +381,18 @@
       <div class="projektogtekst__grid">
         <div class="projekt__billede-grid">
           <div class="indesigns__billede comprojekt__billede">
-            <img src="Desktopbilleder/indesignD.svg" alt="indesigns__billede" />
+            <img src="Desktopbilleder/indesignD.svg" alt="indesigns__billede">
           </div>
         </div>
 
         <!--projektbilledet til mobil-->
         <div class="indesign__billede projekt__billede">
-          <img src="Iphonebilleder/IndesignI.svg" alt="fotografi" width="327" />
+          <img src="Iphonebilleder/IndesignI.svg" alt="fotografi" width="327">
         </div>
         <div class="projekt__Block">
           <div class="__indesign projekt__titel lysere__tekst">
             <h4>
-              Indesign brochure <br />- Formidling af UCL's mulitimediedesigner
+              Indesign brochure <br>- Formidling af UCL's mulitimediedesigner
               uddannelse
             </h4>
           </div>
@@ -546,10 +402,10 @@
               mulitimediedesigner, ned i brochure format. Alle siderne i
               brochuren var i forskellige bredder fordi den skulle bygges op med
               sider som et index/faneblad og skulle sættes sammen i som en bog.
-              <br /><br />
+              <br><br>
               Den kreative proces handlede derfra om at fremføre ucl's brand
               igennem brochuren med samme farve palette og skrifttype samt
-              ikoner og motiver. <br /><br />
+              ikoner og motiver. <br><br>
 
               I processen gik jeg meget op i at læsestoffet ikke blev for tungt
               og delte derfor informationerne op i små bider og tilføjede
@@ -563,12 +419,7 @@
             <h4>Hvis du vil se mere af projektet:</h4>
           </div>
           <div class="__center">
-            <a
-              href="Billeder/workshopindesignfærdig00-kopi.pdf"
-              class="cta__knap"
-              download
-              >TRYK HER</a
-            >
+            <a href="Billeder/workshopindesignfærdig00-kopi.pdf" class="cta__knap" download>TRYK HER</a> 
           </div>
         </div>
       </div>
@@ -578,13 +429,11 @@
       <div class="footer__grid">
         <div class="footer__icon--facebook">
           <a href="https://www.facebook.com/mikkel.h.johansen.7/">
-            <img src="Billeder/faceikon.svg" alt="faceikon"
-          /></a>
+            <img src="Billeder/faceikon.svg" alt="faceikon"></a>
         </div>
         <div class="footer__icon--insta">
           <a href="https://www.instagram.com/mhyrup/">
-            <img src="Billeder/instaikon.svg" alt="instaicon"
-          /></a>
+            <img src="Billeder/instaikon.svg" alt="instaicon"></a>
         </div>
         <div class="copy__right">
           <small>copyright © 2025 MIKKEL HYRUP JOHANSEN</small>
