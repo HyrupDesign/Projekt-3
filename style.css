@@ -672,6 +672,11 @@ video {
   font-weight: bold;
 }
 
+.kontakt__information {
+  justify-self: center;
+  text-align: center;
+  padding: 30px;
+}
 
 /*                   */
 /*    kontakt slut   */
